@@ -1,0 +1,19 @@
+{
+  "name": "almanaque-de-aventuras",
+  "version": "1.0.0",
+  "description": "ai meu cu",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Caiouuill/Almanaque-de-Aventuras.git"
+  },
+  "author": "Caio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Caiouuill/Almanaque-de-Aventuras/issues"
+  },
+  "homepage": "https://github.com/Caiouuill/Almanaque-de-Aventuras#readme"
+}
