@@ -5,6 +5,22 @@
     <title>title</title>
 </head>
 <body>
-    
+    <input type="text" id="search" placeholder="Buscar magia...">
+<div id="cards"></div>
+
+<script>
+fetch('/api/spells?name=acalmar')
+  .then(res => res.json())
+  .then(data => {
+    const container = document.getElementById('cards');
+    data.forEach(spell => {
+      const card = document.createElement('div');
+      card.className = 'spell-card';
+      card.innerHTML = `<h3>${spell.name}</h3><p>${spell.level}º nível</p>`;
+      container.appendChild(card);
+    });
+  });
+</script>
+
 </body>
 </html>
