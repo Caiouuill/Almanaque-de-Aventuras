@@ -3,9 +3,9 @@ const router = express.Router();
 const magicController = require('../Controller/magicController');
 
 router.get('/', magicController.getAllSpells);
-router.get('/:id', magicController.getSpellById);
+router.get('/:numero', magicController.getSpellByNumero);
 router.post('/', magicController.createSpell);
-router.put('/:id', magicController.updateSpell);
-router.delete('/:id', magicController.deleteSpell);
+router.put('/:numero', magicController.updateSpell);
+router.delete('/:numero', magicController.deleteSpell);
 
 module.exports = router;
