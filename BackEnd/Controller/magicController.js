@@ -3,15 +3,39 @@ const Magic = require('../Model/magicModel');
 exports.getAllSpells = async (req, res) => {
   try {
     const spells = await Magic.find();
-    res.json(spells);
+    const ordered = spells.map(spell => ({
+      _id: spell._id,
+      numero: spell.numero,
+      nome: spell.nome,
+      nivel: spell.nivel,
+      escola: spell.escola,
+      tempoConjuracao: spell.tempoConjuracao,
+      alcance: spell.alcance,
+      ritual: spell.ritual,  // adiciona ritual
+      tipoMagia: spell.tipoMagia,
+      duracao: spell.duracao,
+      componentes: spell.componentes,
+      descricao: spell.descricao,
+      niveisAltos: spell.niveisAltos,
+      livro: spell.livro,
+      pagina: spell.pagina,
+      classe: spell.classe,
+      concentrado: spell.concentrado, // corrigido aqui
+      createdAt: spell.createdAt,
+      updatedAt: spell.updatedAt,
+      __v: spell.__v
+    }));
+    res.json(ordered);
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
 };
 
+
 exports.getSpellByNumero = async (req, res) => {
   try {
-    const spell = await Magic.findById(req.params.numero);
+    const numero = Number(req.params.numero);
+    const spell = await Magic.findOne({ numero });
     if (!spell) return res.status(404).json({ error: 'Magia não encontrada' });
     res.json(spell);
   } catch (err) {
@@ -21,20 +45,18 @@ exports.getSpellByNumero = async (req, res) => {
 
 exports.createSpell = async (req, res) => {
   try {
-    console.log("📥 Recebido no POST:", req.body); // <-- debug
     const newSpell = new Magic(req.body);
     await newSpell.save();
     res.status(201).json(newSpell);
   } catch (err) {
-    console.error("❌ Erro ao salvar magia:", err);
     res.status(400).json({ error: err.message });
   }
 };
 
-
 exports.updateSpell = async (req, res) => {
   try {
-    const updated = await Magic.findByIdAndUpdate(req.params.numero, req.body, { new: true });
+    const numero = Number(req.params.numero);
+    const updated = await Magic.findOneAndUpdate({ numero }, req.body, { new: true, runValidators: true });
     if (!updated) return res.status(404).json({ error: 'Magia não encontrada' });
     res.json(updated);
   } catch (err) {
@@ -44,7 +66,8 @@ exports.updateSpell = async (req, res) => {
 
 exports.deleteSpell = async (req, res) => {
   try {
-    const deleted = await Magic.findByIdAndDelete(req.params.numero);
+    const numero = Number(req.params.numero);
+    const deleted = await Magic.findOneAndDelete({ numero });
     if (!deleted) return res.status(404).json({ error: 'Magia não encontrada' });
     res.json({ message: 'Magia deletada com sucesso' });
   } catch (err) {

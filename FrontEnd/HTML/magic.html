@@ -1,26 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8" />
-    <title>title</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Magias</title>
+  <link rel="stylesheet" href="../CSS/magic.css" />
 </head>
 <body>
-    <input type="text" id="search" placeholder="Buscar magia...">
-<div id="cards"></div>
+  <h1>Lista de Magias</h1>
+<button id="filterToggle" class="filter-button">Filtros ▼</button>
 
-<script>
-fetch('/api/spells?name=acalmar')
-  .then(res => res.json())
-  .then(data => {
-    const container = document.getElementById('cards');
-    data.forEach(spell => {
-      const card = document.createElement('div');
-      card.className = 'spell-card';
-      card.innerHTML = `<h3>${spell.name}</h3><p>${spell.level}º nível</p>`;
-      container.appendChild(card);
-    });
-  });
-</script>
+<div id="filterPanel" class="filter-panel closed">
+  <!-- Coloque aqui seus filtros -->
+  <label for="alcanceFilter">Alcance:</label>
+  <select id="alcanceFilter">
+    <option value="">Todos</option>
+    <option value="Pessoal">Pessoal</option>
+    <option value="Toque">Toque</option>
+    <option value="Metros">Metros</option>
+    <option value="Km">Km</option>
+  </select>
 
+  <label for="tipoMagiaFilter">Tipo da Magia:</label>
+  <select id="tipoMagiaFilter">
+    <option value="">Todos</option>
+    <option value="Dano">Dano</option>
+    <option value="Cura">Cura</option>
+  </select>
+
+  <label for="ritualFilter">Ritual:</label>
+  <select id="ritualFilter">
+    <option value="">Todos</option>
+    <option value="true">Sim</option>
+    <option value="false">Não</option>
+  </select>
+
+  <label for="tempoFilter">Tempo de Conjuração:</label>
+  <select id="tempoFilter">
+    <option value="">Todos</option>
+    <option value="Ação">Ação</option>
+    <option value="Ação Bônus">Ação Bônus</option>
+    <option value="Reação">Reação</option>
+    <option value="Especial">Especial</option>
+    <option value="Minutos">Minutos</option>
+    <option value="Horas">Horas</option>
+  </select>
+</div>
+
+
+  <div id="spells-container"></div>
+
+  <script src="../JS/magic.js"></script>
 </body>
 </html>
