@@ -1,22 +1,40 @@
 const mongoose = require('mongoose');
 
+const BOOKS = [
+  'PHB',  // Player’s Handbook
+  'XGE',  // Xanathar’s Guide to Everything
+  'TCE',  // Tasha’s Cauldron of Everything
+  'EEPC', // Elemental Evil Player’s Companion
+  'SCAG', // Sword Coast Adventurer’s Guide
+  'AI',   // Acquisitions Incorporated
+  'EGtW', // Explorer’s Guide to Wildemount
+  'GGR',  // Guildmaster’s Guide to Ravnica
+  'LLK'   // Lost Laboratory of Kwalish
+];
+
+const CLASSES = [
+  'Artífice',
+  'Bardo',
+  'Bruxo',
+  'Clérigo',
+  'Druida',
+  'Guerreiro',
+  'Ladino',
+  'Mago',
+  'Monge',
+  'Paladino',
+  'Patrulheiro',
+  'Feiticeiro',
+  'Bárbaro'
+];
+
 const magicSchema = new mongoose.Schema({
   nome: { type: String, required: true },
-  classe: {
-    Art: { type: Boolean, required: false },
-    Bar: { type: Boolean, required: false },
-    Brd: { type: Boolean, required: false },
-    Cle: { type: Boolean, required: false },
-    Drd: { type: Boolean, required: false },
-    Gue: { type: Boolean, required: false },
-    Lad: { type: Boolean, required: false },
-    Mag: { type: Boolean, required: false },
-    Mon: { type: Boolean, required: false },
-    Pal: { type: Boolean, required: false },
-    Pat: { type: Boolean, required: false },
-    Fei: { type: Boolean, required: false },
-    Bru: { type: Boolean, required: false }
-  },
+  nomeIngles: { type: String }, // opcional, para exibir no card
+  classes: [{
+    type: String,
+    enum: CLASSES
+  }],
   numero: { type: Number, required: true, unique: true },
   nivel: { type: String, required: true },
   escola: { type: String, required: true },
@@ -31,7 +49,7 @@ const magicSchema = new mongoose.Schema({
       required: true,
       enum: ['Pessoal', 'Toque', 'Metros', 'Km']
     },
-    distancia: { type: Number } // opcional, para 'Metros' e 'Km'
+    distancia: { type: Number } // opcional
   },
   ritual: { type: Boolean, default: false },
   tipoMagia: {
@@ -45,12 +63,18 @@ const magicSchema = new mongoose.Schema({
     V: { type: Boolean, default: false },
     S: { type: Boolean, default: false },
     M: { type: Boolean, default: false },
-    I: { type: String } // descrição dos materiais, opcional
+    I: { type: String } // materiais, se houver
   },
   descricao: { type: String, required: true },
   niveisAltos: { type: String },
-  livro: { type: String, required: true },
+  livro: {
+    type: String,
+    enum: BOOKS,
+    required: true
+  },
   pagina: { type: Number, required: true }
 }, { timestamps: true });
 
 module.exports = mongoose.model('Magic', magicSchema);
+module.exports.BOOKS = BOOKS;
+module.exports.CLASSES = CLASSES;

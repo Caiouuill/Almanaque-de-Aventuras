@@ -7,20 +7,20 @@ exports.getAllSpells = async (req, res) => {
       _id: spell._id,
       numero: spell.numero,
       nome: spell.nome,
+      nomeIngles: spell.nomeIngles || '',
       nivel: spell.nivel,
       escola: spell.escola,
       tempoConjuracao: spell.tempoConjuracao,
       alcance: spell.alcance,
-      ritual: spell.ritual,  // adiciona ritual
+      ritual: spell.ritual,
       tipoMagia: spell.tipoMagia,
       duracao: spell.duracao,
       componentes: spell.componentes,
       descricao: spell.descricao,
-      niveisAltos: spell.niveisAltos,
+      niveisAltos: spell.niveisAltos || '',
       livro: spell.livro,
       pagina: spell.pagina,
-      classe: spell.classe,
-      concentrado: spell.concentrado, // corrigido aqui
+      classes: spell.classes || [],
       createdAt: spell.createdAt,
       updatedAt: spell.updatedAt,
       __v: spell.__v
@@ -30,6 +30,7 @@ exports.getAllSpells = async (req, res) => {
     res.status(500).json({ error: err.message });
   }
 };
+
 
 
 exports.getSpellByNumero = async (req, res) => {
