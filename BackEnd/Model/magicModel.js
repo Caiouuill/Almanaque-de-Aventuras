@@ -9,7 +9,9 @@ const BOOKS = [
   'AI',   // Acquisitions Incorporated
   'EGtW', // Explorer’s Guide to Wildemount
   'GGR',  // Guildmaster’s Guide to Ravnica
-  'LLK'   // Lost Laboratory of Kwalish
+  'LLK',  // Lost Laboratory of Kwalish
+  'AAG',  //Astral Adventures Guide
+  'SCC'   //Strixhaven: A Curriculum of Chaos
 ];
 
 const CLASSES = [
@@ -39,10 +41,16 @@ const magicSchema = new mongoose.Schema({
   nivel: { type: String, required: true },
   escola: { type: String, required: true },
   tempoConjuracao: {
+  tipo: {
     type: String,
     required: true,
     enum: ['Ação', 'Ação Bônus', 'Reação', 'Especial', 'Minutos', 'Horas']
   },
+  quantidade: {
+    type: Number,
+    required: false // só vai ser necessário se for Minutos ou Horas
+  }
+},
   alcance: {
     tipo: {
       type: String,
@@ -54,7 +62,7 @@ const magicSchema = new mongoose.Schema({
   ritual: { type: Boolean, default: false },
   tipoMagia: {
     type: String,
-    enum: ['Dano', 'Cura', 'Outro'],
+    enum: ['Dano', 'Cura', 'Defesa','Buff', 'Outro'],
     default: 'Outro',
     required: true
   },

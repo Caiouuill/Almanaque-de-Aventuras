@@ -46,13 +46,23 @@ exports.getSpellByNumero = async (req, res) => {
 
 exports.createSpell = async (req, res) => {
   try {
-    const newSpell = new Magic(req.body);
-    await newSpell.save();
-    res.status(201).json(newSpell);
+    let result;
+
+    if (Array.isArray(req.body)) {
+      // Se for array -> salva todos de uma vez
+      result = await Magic.insertMany(req.body);
+    } else {
+      // Se for só um objeto -> cria normalmente
+      const newSpell = new Magic(req.body);
+      result = await newSpell.save();
+    }
+
+    res.status(201).json(result);
   } catch (err) {
     res.status(400).json({ error: err.message });
   }
 };
+
 
 exports.updateSpell = async (req, res) => {
   try {
