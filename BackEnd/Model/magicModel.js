@@ -11,7 +11,10 @@ const BOOKS = [
   'GGR',  // Guildmaster’s Guide to Ravnica
   'LLK',  // Lost Laboratory of Kwalish
   'AAG',  //Astral Adventures Guide
-  'SCC'   //Strixhaven: A Curriculum of Chaos
+  'SCC',  //Strixhaven: A Curriculum of Chaos
+  'IDRotF',//Icewind Dale: Rime of the Frostmaiden
+  'FTD',  //Fizban's Treasury of Dragons
+  'SatO'  //Sigil and the Outlands
 ];
 
 const CLASSES = [
@@ -41,16 +44,16 @@ const magicSchema = new mongoose.Schema({
   nivel: { type: String, required: true },
   escola: { type: String, required: true },
   tempoConjuracao: {
-  tipo: {
-    type: String,
-    required: true,
-    enum: ['Ação', 'Ação Bônus', 'Reação', 'Especial', 'Minutos', 'Horas']
+    tipo: {
+      type: String,
+      required: true,
+      enum: ['Ação', 'Ação Bônus', 'Reação', 'Especial', 'Minutos', 'Horas']
+    },
+    quantidade: {
+      type: Number,
+      required: false // só vai ser necessário se for Minutos ou Horas
+    }
   },
-  quantidade: {
-    type: Number,
-    required: false // só vai ser necessário se for Minutos ou Horas
-  }
-},
   alcance: {
     tipo: {
       type: String,
@@ -62,7 +65,7 @@ const magicSchema = new mongoose.Schema({
   ritual: { type: Boolean, default: false },
   tipoMagia: {
     type: String,
-    enum: ['Dano', 'Cura', 'Defesa','Buff', 'Outro'],
+    enum: ['Dano', 'Cura', 'Defesa', 'Buff', 'Debuff', 'Controle', 'Outro'],
     default: 'Outro',
     required: true
   },

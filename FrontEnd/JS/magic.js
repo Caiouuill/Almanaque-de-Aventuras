@@ -34,10 +34,18 @@ function renderSpells(spellsToRender) {
   }
 
   spellsToRender.forEach(spell => {
+    // Alcance
     const alcanceTipo = spell.alcance?.tipo || 'Indefinido';
-    const alcanceDistancia = spell.alcance?.distancia ?
-      ` ${spell.alcance.distancia}${alcanceTipo === 'Metros' ? 'm' : (alcanceTipo === 'Km' ? 'km' : '')}` : '';
+    const alcanceDistancia = spell.alcance?.distancia != null
+      ? ` ${spell.alcance.distancia}${alcanceTipo === 'Metros' ? 'm' : (alcanceTipo === 'Km' ? 'km' : '')}`
+      : '';
 
+    // Tempo de Conjuração
+    const tipoConjuracao = spell.tempoConjuracao?.tipo || 'Indefinido';
+    const quantidadeConjuracao = spell.tempoConjuracao?.quantidade;
+    const tempoConjuracaoTexto = quantidadeConjuracao != null ? `${quantidadeConjuracao} ${tipoConjuracao}` : tipoConjuracao;
+
+    // Componentes
     const componentes = [];
     if (spell.componentes?.V) componentes.push('V');
     if (spell.componentes?.S) componentes.push('S');
@@ -45,28 +53,31 @@ function renderSpells(spellsToRender) {
     if (spell.componentes?.I) componentes.push(`(${spell.componentes.I})`);
     const componentesTexto = componentes.join(', ') || 'Nenhum';
 
+    // Níveis altos
     const niveisAltosTexto = spell.niveisAltos ? `<p><strong>Níveis Altos:</strong> ${spell.niveisAltos}</p>` : '';
 
+    // Criação do card
     const card = document.createElement('div');
     card.className = 'card';
 
     card.innerHTML = `
-      <h2>${spell.nome} <span class="english-name">(${spell.nomeIngles || '—'})</span></h2>
-      <p class="level-school">${spell.nivel} nível – ${spell.escola}</p>
-      <p class="classes"><strong>Conjuradores:</strong> ${Array.isArray(spell.classes) ? spell.classes.join(', ') : spell.classes}</p>
-      <p><strong>Tempo de Conjuração:</strong> ${spell.tempoConjuracao}</p>
+      <h2>${spell.nome || '—'} <span class="english-name">(${spell.nomeIngles || '—'})</span></h2>
+      <p class="level-school">${spell.nivel || '—'} nível – ${spell.escola || '—'}</p>
+      <p class="classes"><strong>Conjuradores:</strong> ${Array.isArray(spell.classes) ? spell.classes.join(', ') : '—'}</p>
+      <p><strong>Tempo de Conjuração:</strong> ${tempoConjuracaoTexto}</p>
       <p><strong>Alcance:</strong> ${alcanceTipo}${alcanceDistancia}</p>
       <p><strong>Componentes:</strong> ${componentesTexto}</p>
-      <p><strong>Duração:</strong> ${spell.duracao}</p>
+      <p><strong>Duração:</strong> ${spell.duracao || '—'}</p>
       <p><strong>Tipo:</strong> ${spell.tipoMagia || 'Indefinido'}</p>
       <p><strong>Ritual:</strong> ${spell.ritual ? 'Sim' : 'Não'}</p>
-      <p><strong>Descrição:</strong> ${spell.descricao}</p>
+      <p><strong>Descrição:</strong> ${spell.descricao || '—'}</p>
       ${niveisAltosTexto}
-      <p><strong>Livro:</strong> ${spell.livro} (p. ${spell.pagina})</p>
+      <p><strong>Livro:</strong> ${spell.livro || '—'} (p. ${spell.pagina || '—'})</p>
     `;
     spellsContainer.appendChild(card);
   });
 }
+
 
 function applyFilters() {
   let filtered = spells;

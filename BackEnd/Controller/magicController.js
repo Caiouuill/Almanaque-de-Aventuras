@@ -10,7 +10,10 @@ exports.getAllSpells = async (req, res) => {
       nomeIngles: spell.nomeIngles || '',
       nivel: spell.nivel,
       escola: spell.escola,
-      tempoConjuracao: spell.tempoConjuracao,
+      tempoConjuracao: {
+        tipo: spell.tempoConjuracao?.tipo || 'Indefinido',
+        quantidade: spell.tempoConjuracao?.quantidade || null
+      },
       alcance: spell.alcance,
       ritual: spell.ritual,
       tipoMagia: spell.tipoMagia,
