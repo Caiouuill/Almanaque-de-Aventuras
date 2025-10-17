@@ -1,5 +1,5 @@
 body {
-    background-color: #111;
+    background-color: #f5f5f5;
     color: #fff;
     font-family: 'Inter', sans-serif;
     margin: 0;
@@ -30,6 +30,8 @@ body {
 .site-name {
     font-weight: bold;
     font-size: 18px;
+    color: white;
+  text-decoration: none;
 }
 
 /* Menu central */
@@ -109,16 +111,19 @@ h2 {
 }
 
 .blue-title {
+    color: #000;
     border-bottom: 3px solid #00aaff;
     display: inline-block;
 }
 
 .green-title {
+    color: #000;
     border-bottom: 3px solid #00ffaa;
     display: inline-block;
 }
 
 .purple-title {
+    color: #000;
     border-bottom: 3px solid #aa00ff;
     display: inline-block;
 }

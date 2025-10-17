@@ -14,7 +14,8 @@ const BOOKS = [
   'SCC',  //Strixhaven: A Curriculum of Chaos
   'IDRotF',//Icewind Dale: Rime of the Frostmaiden
   'FTD',  //Fizban's Treasury of Dragons
-  'SatO'  //Sigil and the Outlands
+  'SatO',  //Sigil and the Outlands
+  'BMT'   //The Book of Many Things
 ];
 
 const CLASSES = [
@@ -58,14 +59,14 @@ const magicSchema = new mongoose.Schema({
     tipo: {
       type: String,
       required: true,
-      enum: ['Pessoal', 'Toque', 'Metros', 'Km']
+      enum: ['Pessoal', 'Toque', 'Metros', 'Km', 'Visão','Ilimitado']
     },
     distancia: { type: Number } // opcional
   },
   ritual: { type: Boolean, default: false },
   tipoMagia: {
     type: String,
-    enum: ['Dano', 'Cura', 'Defesa', 'Buff', 'Debuff', 'Controle', 'Outro'],
+    enum: ['Dano', 'Cura', 'Defesa', 'Buff', 'Debuff', 'Controle','Utilidade', 'Outro'],
     default: 'Outro',
     required: true
   },

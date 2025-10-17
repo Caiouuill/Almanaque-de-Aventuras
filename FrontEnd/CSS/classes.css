@@ -1,0 +1,396 @@
+ :root {
+     --accent: #0f3460;
+     /* azul mais vibrante */
+     --accent-2: #3a6ea5;
+     /* azul intermediário para destaque */
+     --muted: #6b4b6d;
+     --table-border: #e0c9e8;
+     --table-odd: #fbf4fb;
+     --corBarbaro: #ff0000;
+     --corbarbaro2: #953030;
+     --corBardo: #B802DC;
+     --corBardo2: #650777;
+     --corBruxo: #650777;
+     --corBruxo2: #470853;
+     --corClerigo: #FEC200;
+     --corClerigo2: #ce9e00;
+     --corDruida:#005811;
+     --corDruida2:#01380c;
+     --corFeiticeiro:#8A0000;
+     --corFeiticeiro2:#570101;
+     --corGuerreiro:#FE4900;
+     --corGuerreiro2:#c23700;
+     --corLadino:#404040;
+     --corLadino2:#292929;
+     --corMago:#002D86;
+     --corMago2:#002162;
+     --corMonge:#984807;
+     --corMonge2:#743706;
+     --corPaladino:#008DF6;
+     --corPaladino2:#005da5;
+     --corPatrulheiro:#00CC05;
+     --corPatrulheiro2:#007e02;
+
+ }
+
+ body {
+     font-family: Inter, "Helvetica Neue", Arial, sans-serif;
+     background-color: #faf8fc;
+     color: #222;
+     margin: 0;
+     line-height: 1.45;
+ }
+
+ header {
+     background: linear-gradient(90deg, rgba(146, 39, 143, 0.06), rgba(146, 39, 143, 0.02));
+ }
+
+ .top-nav {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     gap: 12px;
+     padding: 12px 20px;
+     max-width: 1200px;
+     margin: 0 auto;
+ }
+
+ .nav-left {
+     display: flex;
+     align-items: center;
+     gap: 10px;
+ }
+
+ .logo {
+     width: 32px;
+     height: 32px;
+     display: block;
+ }
+
+ .site-name {
+     font-weight: 700;
+     color: var(--muted);
+     text-decoration: none;
+ }
+
+ .nav-center {
+     list-style: none;
+     margin: 0;
+     padding: 0;
+     display: flex;
+     gap: 12px;
+     align-items: center;
+ }
+
+ .nav-center li {
+     position: relative;
+     cursor: default;
+     padding: 6px 8px;
+     border-radius: 6px;
+ }
+
+ .nav-center li:hover {
+     background: rgba(146, 39, 143, 0.05);
+ }
+
+ .dropdown-menu {
+     position: absolute;
+     left: 0;
+     top: calc(100% + 6px);
+     background: white;
+     border: 1px solid #eee;
+     padding: 8px 6px;
+     display: none;
+     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+     border-radius: 6px;
+ }
+
+ .dropdown:hover .dropdown-menu {
+     display: block;
+ }
+
+ .dropdown-menu li {
+     padding: 6px 10px;
+     white-space: nowrap;
+ }
+
+ .dropdown-menu a {
+     text-decoration: none;
+     color: #333;
+ }
+
+ main {
+     max-width: 1200px;
+     margin: 18px auto;
+     padding: 0 16px;
+ }
+
+ .page-title {
+     color: var(--accent);
+     margin: 12px 0 6px 0;
+     font-size: 1.6rem;
+ }
+
+ .topbar nav a {
+     margin-right: 10px;
+     text-decoration: none;
+     color: #4a2a5a;
+     padding: 6px 8px;
+     border-radius: 6px;
+ }
+
+ .topbar nav a:hover {
+     background: rgba(146, 39, 143, 0.06);
+ }
+
+ article.antecedente {
+     background: white;
+     padding: 16px;
+     margin: 14px 0;
+     border-radius: 10px;
+     box-shadow: 0 6px 20px rgba(20, 10, 30, 0.03);
+     border: 1px solid rgba(146, 39, 143, 0.04);
+ }
+
+ article.barbaro {
+     border: 2px solid var(--corBarbaro);
+     background: white;
+     padding: 16px;
+     margin: 14px 0;
+     border-radius: 10px;
+     box-shadow: 0 6px 20px rgba(20, 10, 30, 0.03);
+ }
+ article.barbaro h2 {
+    color: var(--corBarbaro);
+ }
+ article.barbaro h3 {
+    color: var(--corBarbaro);
+ }
+ article.barbaro thead th {
+    background: linear-gradient(180deg, var(--corbarbaro2), var(--corBarbaro));
+ }
+
+ article.barbaro th.nivel {
+    color: var(--corBarbaro);
+ }
+
+  article.bardo {
+     border: 2px solid var(--corBardo);
+     background: white;
+     padding: 16px;
+     margin: 14px 0;
+     border-radius: 10px;
+     box-shadow: 0 6px 20px rgba(20, 10, 30, 0.03);
+ }
+ article.bardo h2 {
+    color: var(--corBardo);
+ }
+ article.bardo h3 {
+    color: var(--corBardo);
+ }
+ article.bardo thead th {
+    background: linear-gradient(180deg, var(--corBardo2), var(--corBardo));
+ }
+
+ article.bardo th.nivel {
+    color: var(--corBardo);
+ }
+
+   article.bruxo {
+     border: 2px solid var(--corBruxo);
+     background: white;
+     padding: 16px;
+     margin: 14px 0;
+     border-radius: 10px;
+     box-shadow: 0 6px 20px rgba(20, 10, 30, 0.03);
+ }
+ article.bruxo h2 {
+    color: var(--corBruxo);
+ }
+ article.bruxo h3 {
+    color: var(--corBruxo);
+ }
+ article.bruxo thead th {
+    background: linear-gradient(180deg, var(--corBruxo2), var(--corBruxo));
+ }
+
+ article.bruxo th.nivel {
+    color: var(--corBruxo);
+ }
+
+    article.clerigo {
+     border: 2px solid var(--corClerigo);
+     background: white;
+     padding: 16px;
+     margin: 14px 0;
+     border-radius: 10px;
+     box-shadow: 0 6px 20px rgba(20, 10, 30, 0.03);
+ }
+ article.clerigo h2 {
+    color: var(--corClerigo);
+ }
+ article.clerigo h3 {
+    color: var(--corClerigo);
+ }
+ article.clerigo thead th {
+    background: linear-gradient(180deg, var(--corClerigo2), var(--corClerigo));
+ }
+
+ article.clerigo th.nivel {
+    color: var(--corClerigo);
+ }
+
+     article.druida {
+     border: 2px solid var(--corDruida);
+     background: white;
+     padding: 16px;
+     margin: 14px 0;
+     border-radius: 10px;
+     box-shadow: 0 6px 20px rgba(20, 10, 30, 0.03);
+ }
+ article.druida h2 {
+    color: var(--corDruida);
+ }
+ article.druida h3 {
+    color: var(--corDruida);
+ }
+ article.druida thead th {
+    background: linear-gradient(180deg, var(--corDruida2), var(--corDruida));
+ }
+
+ article.druida th.nivel {
+    color: var(--corDruida);
+ }
+
+     article.guerreiro {
+     border: 2px solid var(--corGuerreiro);
+     background: white;
+     padding: 16px;
+     margin: 14px 0;
+     border-radius: 10px;
+     box-shadow: 0 6px 20px rgba(20, 10, 30, 0.03);
+ }
+ article.guerreiro h2 {
+    color: var(--corGuerreiro);
+ }
+ article.guerreiro h3 {
+    color: var(--corGuerreiro);
+ }
+ article.guerreiro thead th {
+    background: linear-gradient(180deg, var(--corGuerreiro2), var(--corGuerreiro));
+ }
+
+ article.guerreiro th.nivel {
+    color: var(--corGuerreiro);
+ }
+
+     article.ladino {
+     border: 2px solid var(--corLadino);
+     background: white;
+     padding: 16px;
+     margin: 14px 0;
+     border-radius: 10px;
+     box-shadow: 0 6px 20px rgba(20, 10, 30, 0.03);
+ }
+ article.ladino h2 {
+    color: var(--corLadino);
+ }
+ article.ladino h3 {
+    color: var(--corLadino);
+ }
+ article.ladino thead th {
+    background: linear-gradient(180deg, var(--corLadino2), var(--corLadino));
+ }
+
+ article.ladino th.nivel {
+    color: var(--corLadino);
+ }
+ 
+
+ h2 {
+     margin-top: 0;
+     color: var(--accent);
+     letter-spacing: 0.6px;
+ }
+
+ .section-title {
+     margin-bottom: 8px;
+     color: #46264a;
+ }
+
+ .meta {
+     color: #444;
+     font-size: 0.95rem;
+ }
+
+ /* ===== Estilo das tabelas globais ===== */
+ .table-wrap {
+     overflow-x: auto;
+     border-radius: 8px;
+ }
+
+ table {
+     width: 100%;
+     border-collapse: collapse;
+     margin: 12px 0 18px 0;
+     min-width: 600px;
+     background: linear-gradient(180deg, #fff, #fff);
+     border-radius: 8px;
+     overflow: hidden;
+ }
+
+ thead th {
+     background: linear-gradient(90deg, var(--accent), #6f1f6e);
+     color: #fff;
+     font-weight: 700;
+     padding: 10px 12px;
+     text-align: center;
+     border-bottom: 2px solid rgba(0, 0, 0, 0.06);
+     font-size: 0.95rem;
+ }
+
+ tbody td,
+ tbody th {
+     border: 1px solid var(--table-border);
+     padding: 8px 10px;
+     text-align: center;
+     font-size: 0.95rem;
+ }
+
+ tbody tr:nth-child(odd) td {
+     background: var(--table-odd);
+ }
+
+ tbody tr:hover td {
+     background: linear-gradient(90deg, rgba(216, 154, 223, 0.12), rgba(216, 154, 223, 0.04));
+     transition: background 0.18s;
+ }
+
+ .nivel {
+     background: linear-gradient(90deg, #f6e1fb, #f2cff6);
+     font-weight: 700;
+     color: #3f194f;
+ }
+
+ caption {
+     caption-side: top;
+     padding: 8px 0;
+     font-weight: 700;
+     color: var(--muted);
+     text-align: left;
+ }
+
+ /* pequenas telas: reduzir paddings */
+ @media (max-width:680px) {
+
+     thead th,
+     tbody td {
+         padding: 8px 6px;
+         font-size: 0.85rem;
+         min-width: 50px;
+     }
+
+     .page-title {
+         font-size: 1.4rem;
+     }
+ }
