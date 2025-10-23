@@ -34,6 +34,8 @@ h1 {
 .site-name {
   font-weight: bold;
   font-size: 18px;
+  color: white;
+  text-decoration: none;
 }
 
 /* Menu central */
@@ -44,6 +46,7 @@ h1 {
   align-items: center;
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 
 .nav-center li {
