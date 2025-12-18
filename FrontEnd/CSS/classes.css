@@ -394,3 +394,46 @@
          font-size: 1.4rem;
      }
  }
+
+.SubBarbaro {
+      border: 2px solid var(--corBarbaro);
+     background: white;
+     padding: 16px;
+     margin: 14px 0;
+     border-radius: 10px;
+     box-shadow: 0 6px 20px rgba(20, 10, 30, 0.03);
+
+ }
+
+ .filter-toggle {
+  background-color: #0f3460;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  margin: 10px 0;
+}
+
+.filter-toggle:hover {
+  background-color: #357abd;
+}
+
+.filter-panel {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  background: #f9f9f9;
+  padding: 0 1rem;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.filter-panel.open {
+  max-height: 600px;
+  opacity: 1;
+  padding: 15px 1rem;
+}
