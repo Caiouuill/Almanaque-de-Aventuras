@@ -6,7 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Almanaque de Aventuras — Classes</title>
     <link rel="stylesheet" href="../CSS/classes.css">
+    <link rel="stylesheet" href="../CSS/base.css">
+    <link rel="stylesheet" href="../CSS/componentes.css">-->
+    <link rel="stylesheet" href="../CSS/pages.css">
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v5.15.4/css/all.css" />
+
+
 
 </head>
 
@@ -35,6 +40,13 @@
                         <li><a href="#">Aventuras</a></li>
                         <li><a href="#">Livros</a></li>
                         <li><a href="#">Condições</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    Mestre
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Bestiário</a></li>
+                        <li><a href="#">Gerador de Loot</a></li>
                     </ul>
                 </li>
             </ul>
@@ -323,25 +335,18 @@
 
             <h3 class="section-title">Caminhos (subclasses)</h3>
 
-            <!-- Exemplo: cole onde quiser -->
-            <button class="filter-toggle" data-target="#berserker">Berserker ▼</button>
+            <div class="subclass-buttons">
+                <button class="sub-btn active" data-tab="berserker">Berserker PHB`24</button>
+                <button class="sub-btn" data-tab="totemico">Guerreiro Totêmico </button>
+                <button class="sub-btn" data-tab="Bestial">Bestial TCoE</button>
+                <button class="sub-btn" data-tab="Guardião Ancestral">Guardião Ancestral </button>
+                <button class="sub-btn" data-tab="Guardião da Batalha">Guardião da Batalha </button>
+                <button class="sub-btn" data-tab="Magia Selvagem">Magia Selvagem PHB`24</button>
+                <button class="sub-btn" data-tab="Zealot">Zealot PHB`24</button>
+            </div>
 
-            <section id="berserker" class="filter-panel">
-                <h4>Caminho do Berserker</h4>
-                <ul>
-                    <li>3º — <em>Frenezi</em>: pode entrar em frênezi...</li>
-                    <li>6º — <em>Fúria Inabalável</em>: não pode ser amedrontado...</li>
-                    <li>10º — <em>Presença Intimidadora</em>: Escolha uma criatura...</li>
-                    <li>14º — <em>Retaliação</em>: Quando sofrer dano...</li>
-                </ul>
-            </section>
-
-
-
-
-            <div class="SubBarbaro">Berserker </div>
-            <div class="SubBarbaroFechado">
-                <h4>Caminho do Berserker</h4>
+            <div class="subclass-panel active" data-content="berserker">
+                <h4>Caminho do Berserker PHB'24</h4>
                 <ul class="subclass">
                     <li>3º — <em>Frenezi</em>: pode entrar em frênezi quando em fúria e fazer ataque extra como ação
                         bônus;
@@ -363,46 +368,64 @@
                 </ul>
             </div>
 
+            <div class="subclass-panel" data-content="totemico">
+                <h4>Caminho do Guerreiro Totêmico</h4>
+                <ul class="subclass">
+                    <li>3º — Caçador Espiritual e Espírito Totêmico: Pode conjurar as magias falar com animas e sentido
+                        animal, mas somente como ritual.
+                        Pode escolher qualquer um entre:
+                        <strong>Urso:</strong> Quando em fúria fica resistente a todos os tipos de dano, exceto
+                        psíquico.
+                        <strong>Águia:</strong> Quando em fúria e sem usar armadura pesada, criaturas tem desvantagem em
+                        ataques de
+                        oportunidade contra você e você pode usar ação corrida como ação bônus.
+                        <strong>Lobo:</strong> Quando em fúria, seus aliados têm vantagem em ataque corpo a corpo contra
+                        criaturas inimigas a
+                        1,5 m de você.
+                    </li>
+                    <li>6º — Aspecto da Fera:Pode escolher qualquer um entre:
+                        <strong>Urso:</strong> Sua capacidade de carga (incluindo carga máxima e sustentação) é dobrada
+                        e
+                        você tem vantagem
+                        nos testes de Força feitos para empurrar, puxar, erguer ou quebrar objetos.
+                        <strong>Águia:</strong> Consegue enxergar 1 milha (1,6 km) sem dificuldade, podendo ver detalhes
+                        como se estiver
+                        olhando a 30 m. A penumbra não impõe desvantagem nos testes de Sabedoria (Percepção).
+                        <strong>Lobo:</strong> Consegue rastrear criaturas enquanto viaja rápido e pode se mover
+                        furtivamente enquanto viaja
+                        em ritmo normal.
+                    </li>
+                    <li>10º — Andarilho Espiritual: Consegue conjurar magia comunhão com a natureza, como ritual. Uma
+                        versão
+                        espiritual de um dos animais totêmicos aparece para dar a informação.</li>
+                    <li>14º — Harmonização Totêmica: Pode escolher qualquer um entre:
+                        <strong>Urso:</strong> Quando em fúria, inimigos a 1,5 m de você tem desvantagem em ataques
+                        contra alvos que não
+                        sejam você ou outra pessoa com essa habilidade.
+                        <strong>Águia:</strong> Quando em fúria, tem deslocamento de voo igual seu deslocamento em
+                        terra. Caí se terminar o
+                        turno no ar ou não ter algo lhe sustentando.
+                        <strong>Lobo:</strong> Quando em fúria, pode usar uma ação bônus para derrubar uma criatura
+                        Grande ou menor que você
+                        acertar com um ataque corpo a corpo.
+                    </li>
+                </ul>
+            </div>
 
+            <div class="subclass-panel" data-content="Bestial">
+            </div>
 
-            <h4>Caminho do Guerreiro Totêmico</h4>
-            <ul class="subclass">
-                <li>3º — Caçador Espiritual e Espírito Totêmico: Pode conjurar as magias falar com animas e sentido
-                    animal, mas somente como ritual.
-                    Pode escolher qualquer um entre:
-                    <strong>Urso:</strong> Quando em fúria fica resistente a todos os tipos de dano, exceto psíquico.
-                    <strong>Águia:</strong> Quando em fúria e sem usar armadura pesada, criaturas tem desvantagem em
-                    ataques de
-                    oportunidade contra você e você pode usar ação corrida como ação bônus.
-                    <strong>Lobo:</strong> Quando em fúria, seus aliados têm vantagem em ataque corpo a corpo contra
-                    criaturas inimigas a
-                    1,5 m de você.
-                </li>
-                <li>6º — Aspecto da Fera:Pode escolher qualquer um entre:
-                    <strong>Urso:</strong> Sua capacidade de carga (incluindo carga máxima e sustentação) é dobrada e
-                    você tem vantagem
-                    nos testes de Força feitos para empurrar, puxar, erguer ou quebrar objetos.
-                    <strong>Águia:</strong> Consegue enxergar 1 milha (1,6 km) sem dificuldade, podendo ver detalhes
-                    como se estiver
-                    olhando a 30 m. A penumbra não impõe desvantagem nos testes de Sabedoria (Percepção).
-                    <strong>Lobo:</strong> Consegue rastrear criaturas enquanto viaja rápido e pode se mover
-                    furtivamente enquanto viaja
-                    em ritmo normal.
-                </li>
-                <li>10º — Andarilho Espiritual: Consegue conjurar magia comunhão com a natureza, como ritual. Uma versão
-                    espiritual de um dos animais totêmicos aparece para dar a informação.</li>
-                <li>14º — Harmonização Totêmica: Pode escolher qualquer um entre:
-                    <strong>Urso:</strong> Quando em fúria, inimigos a 1,5 m de você tem desvantagem em ataques contra
-                    alvos que não
-                    sejam você ou outra pessoa com essa habilidade.
-                    <strong>Águia:</strong> Quando em fúria, tem deslocamento de voo igual seu deslocamento em terra.
-                    Caí se terminar o
-                    turno no ar ou não ter algo lhe sustentando.
-                    <strong>Lobo:</strong> Quando em fúria, pode usar uma ação bônus para derrubar uma criatura Grande
-                    ou menor que você
-                    acertar com um ataque corpo a corpo.
-                </li>
-            </ul>
+            <div class="subclass-panel" data-content="Guardião Ancestral">
+            </div>
+
+            <div class="subclass-panel" data-content="Guardião da Batalha">
+            </div>
+
+            <div class="subclass-panel" data-content="Magia Selvagem">
+            </div>
+
+            <div class="subclass-panel" data-content="Zealot">
+            </div>
         </article>
 
         <!-- ================= BARDO ================= -->
@@ -1257,6 +1280,7 @@
     <footer>
         <p style="text-align:center; padding:18px 0; color:#8b6a8b">&copy; 2025 Almanaque de Aventuras</p>
     </footer>
+    <script src="../JS/subclasses.js"></script>
 </body>
 
 </html>
