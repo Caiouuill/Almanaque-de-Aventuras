@@ -14,22 +14,22 @@
      --corBruxo2: #470853;
      --corClerigo: #FEC200;
      --corClerigo2: #ce9e00;
-     --corDruida:#005811;
-     --corDruida2:#01380c;
-     --corFeiticeiro:#8A0000;
-     --corFeiticeiro2:#570101;
-     --corGuerreiro:#FE4900;
-     --corGuerreiro2:#c23700;
-     --corLadino:#404040;
-     --corLadino2:#292929;
-     --corMago:#002D86;
-     --corMago2:#002162;
-     --corMonge:#984807;
-     --corMonge2:#743706;
-     --corPaladino:#008DF6;
-     --corPaladino2:#005da5;
-     --corPatrulheiro:#00CC05;
-     --corPatrulheiro2:#007e02;
+     --corDruida: #005811;
+     --corDruida2: #01380c;
+     --corFeiticeiro: #8A0000;
+     --corFeiticeiro2: #570101;
+     --corGuerreiro: #FE4900;
+     --corGuerreiro2: #c23700;
+     --corLadino: #404040;
+     --corLadino2: #292929;
+     --corMago: #002D86;
+     --corMago2: #002162;
+     --corMonge: #984807;
+     --corMonge2: #743706;
+     --corPaladino: #008DF6;
+     --corPaladino2: #005da5;
+     --corPatrulheiro: #00CC05;
+     --corPatrulheiro2: #007e02;
 
  }
 
@@ -75,21 +75,24 @@
      border-radius: 10px;
      box-shadow: 0 6px 20px rgba(20, 10, 30, 0.03);
  }
+
  article.barbaro h2 {
-    color: var(--corBarbaro);
+     color: var(--corBarbaro);
  }
+
  article.barbaro h3 {
-    color: var(--corBarbaro);
+     color: var(--corBarbaro);
  }
+
  article.barbaro thead th {
-    background: linear-gradient(180deg, var(--corbarbaro2), var(--corBarbaro));
+     background: linear-gradient(180deg, var(--corbarbaro2), var(--corBarbaro));
  }
 
  article.barbaro th.nivel {
-    color: var(--corBarbaro);
+     color: var(--corBarbaro);
  }
 
-  article.bardo {
+ article.bardo {
      border: 2px solid var(--corBardo);
      background: white;
      padding: 16px;
@@ -97,21 +100,24 @@
      border-radius: 10px;
      box-shadow: 0 6px 20px rgba(20, 10, 30, 0.03);
  }
+
  article.bardo h2 {
-    color: var(--corBardo);
+     color: var(--corBardo);
  }
+
  article.bardo h3 {
-    color: var(--corBardo);
+     color: var(--corBardo);
  }
+
  article.bardo thead th {
-    background: linear-gradient(180deg, var(--corBardo2), var(--corBardo));
+     background: linear-gradient(180deg, var(--corBardo2), var(--corBardo));
  }
 
  article.bardo th.nivel {
-    color: var(--corBardo);
+     color: var(--corBardo);
  }
 
-   article.bruxo {
+ article.bruxo {
      border: 2px solid var(--corBruxo);
      background: white;
      padding: 16px;
@@ -119,21 +125,24 @@
      border-radius: 10px;
      box-shadow: 0 6px 20px rgba(20, 10, 30, 0.03);
  }
+
  article.bruxo h2 {
-    color: var(--corBruxo);
+     color: var(--corBruxo);
  }
+
  article.bruxo h3 {
-    color: var(--corBruxo);
+     color: var(--corBruxo);
  }
+
  article.bruxo thead th {
-    background: linear-gradient(180deg, var(--corBruxo2), var(--corBruxo));
+     background: linear-gradient(180deg, var(--corBruxo2), var(--corBruxo));
  }
 
  article.bruxo th.nivel {
-    color: var(--corBruxo);
+     color: var(--corBruxo);
  }
 
-    article.clerigo {
+ article.clerigo {
      border: 2px solid var(--corClerigo);
      background: white;
      padding: 16px;
@@ -141,21 +150,24 @@
      border-radius: 10px;
      box-shadow: 0 6px 20px rgba(20, 10, 30, 0.03);
  }
+
  article.clerigo h2 {
-    color: var(--corClerigo);
+     color: var(--corClerigo);
  }
+
  article.clerigo h3 {
-    color: var(--corClerigo);
+     color: var(--corClerigo);
  }
+
  article.clerigo thead th {
-    background: linear-gradient(180deg, var(--corClerigo2), var(--corClerigo));
+     background: linear-gradient(180deg, var(--corClerigo2), var(--corClerigo));
  }
 
  article.clerigo th.nivel {
-    color: var(--corClerigo);
+     color: var(--corClerigo);
  }
 
-     article.druida {
+ article.druida {
      border: 2px solid var(--corDruida);
      background: white;
      padding: 16px;
@@ -163,21 +175,24 @@
      border-radius: 10px;
      box-shadow: 0 6px 20px rgba(20, 10, 30, 0.03);
  }
+
  article.druida h2 {
-    color: var(--corDruida);
+     color: var(--corDruida);
  }
+
  article.druida h3 {
-    color: var(--corDruida);
+     color: var(--corDruida);
  }
+
  article.druida thead th {
-    background: linear-gradient(180deg, var(--corDruida2), var(--corDruida));
+     background: linear-gradient(180deg, var(--corDruida2), var(--corDruida));
  }
 
  article.druida th.nivel {
-    color: var(--corDruida);
+     color: var(--corDruida);
  }
 
-     article.guerreiro {
+ article.guerreiro {
      border: 2px solid var(--corGuerreiro);
      background: white;
      padding: 16px;
@@ -185,21 +200,24 @@
      border-radius: 10px;
      box-shadow: 0 6px 20px rgba(20, 10, 30, 0.03);
  }
+
  article.guerreiro h2 {
-    color: var(--corGuerreiro);
+     color: var(--corGuerreiro);
  }
+
  article.guerreiro h3 {
-    color: var(--corGuerreiro);
+     color: var(--corGuerreiro);
  }
+
  article.guerreiro thead th {
-    background: linear-gradient(180deg, var(--corGuerreiro2), var(--corGuerreiro));
+     background: linear-gradient(180deg, var(--corGuerreiro2), var(--corGuerreiro));
  }
 
  article.guerreiro th.nivel {
-    color: var(--corGuerreiro);
+     color: var(--corGuerreiro);
  }
 
-     article.ladino {
+ article.ladino {
      border: 2px solid var(--corLadino);
      background: white;
      padding: 16px;
@@ -207,20 +225,23 @@
      border-radius: 10px;
      box-shadow: 0 6px 20px rgba(20, 10, 30, 0.03);
  }
+
  article.ladino h2 {
-    color: var(--corLadino);
+     color: var(--corLadino);
  }
+
  article.ladino h3 {
-    color: var(--corLadino);
+     color: var(--corLadino);
  }
+
  article.ladino thead th {
-    background: linear-gradient(180deg, var(--corLadino2), var(--corLadino));
+     background: linear-gradient(180deg, var(--corLadino2), var(--corLadino));
  }
 
  article.ladino th.nivel {
-    color: var(--corLadino);
+     color: var(--corLadino);
  }
- 
+
 
  h2 {
      margin-top: 0;
@@ -310,8 +331,8 @@
      }
  }
 
-.SubBarbaro {
-      border: 2px solid var(--corBarbaro);
+ .SubBarbaro {
+     border: 2px solid var(--corBarbaro);
      background: white;
      padding: 16px;
      margin: 14px 0;
@@ -321,65 +342,101 @@
  }
 
  .filter-toggle {
-  background-color: #0f3460;
-  color: #fff;
-  border: none;
-  border-radius: 6px;
-  padding: 8px 20px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: background 0.3s ease;
-  margin: 10px 0;
-}
+     background-color: #0f3460;
+     color: #fff;
+     border: none;
+     border-radius: 6px;
+     padding: 8px 20px;
+     cursor: pointer;
+     font-weight: bold;
+     transition: background 0.3s ease;
+     margin: 10px 0;
+ }
 
-.filter-toggle:hover {
-  background-color: #357abd;
-}
+ .filter-toggle:hover {
+     background-color: #357abd;
+ }
 
-.filter-panel {
-  max-height: 0;
-  opacity: 0;
-  overflow: hidden;
-  transition: all 0.4s ease;
-  background: #f9f9f9;
-  padding: 0 1rem;
-  border-radius: 8px;
-  margin-bottom: 10px;
-}
+ .filter-panel {
+     max-height: 0;
+     opacity: 0;
+     overflow: hidden;
+     transition: all 0.4s ease;
+     background: #f9f9f9;
+     padding: 0 1rem;
+     border-radius: 8px;
+     margin-bottom: 10px;
+ }
 
-.filter-panel.open {
-  max-height: 600px;
-  opacity: 1;
-  padding: 15px 1rem;
-}
+ .filter-panel.open {
+     max-height: 600px;
+     opacity: 1;
+     padding: 15px 1rem;
+ }
 
-.sub-content {
-    display: none;
-    padding: 10px 15px;
-    border-left: 3px solid #a00;
-    margin-bottom: 10px;
-}
+ .sub-content {
+     display: none;
+     padding: 10px 15px;
+     border-left: 3px solid #a00;
+     margin-bottom: 10px;
+ }
 
-.sub-toggle {
-    width: 100%;
-    text-align: left;
-    padding: 10px;
-    font-weight: bold;
-    background: #300;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    margin-top: 8px;
-}
+ .sub-toggle {
+     width: 100%;
+     text-align: left;
+     padding: 10px;
+     font-weight: bold;
+     background: #300;
+     color: #fff;
+     border: none;
+     cursor: pointer;
+     margin-top: 8px;
+ }
 
-.sub-toggle:hover {
-    background: #500;
-}
-.subclass-panel {
-    display: none;
-}
+ .sub-toggle:hover {
+     background: #500;
+ }
 
-.subclass-panel.active {
-    display: block;
-}
+ .subclass-panel {
+     display: none;
+ }
 
+ .subclass-panel.active {
+     padding: 5px;
+     display: block;
+ }
+
+ .sub-btn {
+     display: inline-block;
+     padding: 8px 12px;
+     background: #444;
+     color: #fff;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+     margin-top: 8px;
+ }
+
+ .sub-btn:hover {
+     background: #666;
+ }
+
+ .sub-btn.active {
+     background: #666;
+ }
+
+ .barbaro .sub-btn {
+     background: var(--corBarbaro);
+ }
+
+ .barbaro .sub-btn:hover {
+     background: var(--corbarbaro2);
+ }
+
+ .barbaro .sub-btn.active {
+     background: var(--corbarbaro2);
+ }
+
+ ol.subclass1 {
+     padding-left: 25px;
+ }
