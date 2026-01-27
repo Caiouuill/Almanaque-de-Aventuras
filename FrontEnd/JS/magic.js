@@ -15,8 +15,21 @@ let spells = [];
 
 async function fetchSpells() {
   try {
-    const res = await fetch('/API/magias');
-    spells = await res.json();
+    const endpoints = ['/api/magias', '/magias.json'];
+    let response = null;
+
+    for (const endpoint of endpoints) {
+      response = await fetch(endpoint);
+      if (response.ok) {
+        break;
+      }
+    }
+
+    if (!response?.ok) {
+      throw new Error('Nenhum endpoint de magias respondeu com sucesso.');
+    }
+
+    spells = await response.json();
     console.log('Spells recebidas:', spells);
     renderSpells(spells);
   } catch (err) {
@@ -134,7 +147,7 @@ function applyFilters() {
   // FILTRO POR TEMPO DE CONJURAÇÃO
   const tempoVal = tempoFilter.value.toLowerCase();
   if (tempoVal) {
-    filtered = filtered.filter(spell => spell.tempoConjuracao.toLowerCase() === tempoVal);
+    filtered = filtered.filter(spell => spell.tempoConjuracao?.tipo?.toLowerCase() === tempoVal);
   }
 
   // FILTRO POR LIVRO
