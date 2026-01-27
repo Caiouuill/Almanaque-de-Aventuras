@@ -64,13 +64,13 @@ Almanaque de Aventuras é um site criado para **centralizar conteúdos recentes 
    node server.js
    ```
 
-6. Pronto, ele abrira atutomatico com a porta 3000 por padrao
+6. Pronto, ele abrira automatico com a porta 3000 por padrao
 
 ---
 
-## ⚙️ Variáveis de Ambiente (exemplos)
+## ⚙️ Variáveis de Ambiente (magias por enquanto)
 
-Crie um arquivo `.env` na pasta BackEnd com o acesso ao seu mongoBD para ele operar sem problemas:
+Eu coloquei todas as magias no mongoDB, caso  queira usar o propria DB, podes usar os arquivos: magias.json ou Spell.csv para colocar na sua DB
 
 ```
 MONGODB_URI=<sua-string-de-conexao-mongodb>
@@ -84,6 +84,4 @@ Este projeto possui **finalidade educacional e pessoal**. Todo material relacion
 
 ## 👥 Contribuição
 
-Contribuições são bem‑vindas (traduções, melhorias de UI, correções). Para contribuir:
-
-So fazer um PR que eu aprovo.
+Contribuições são bem‑vindas (traduções, melhorias de UI, correções). Para contribuir: So fazer um PR que eu aprovo.
