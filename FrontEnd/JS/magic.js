@@ -15,7 +15,7 @@ let spells = [];
 
 async function fetchSpells() {
   try {
-    const res = await fetch('http://localhost:3000/api/magias');
+    const res = await fetch('/api/magias');
     spells = await res.json();
     console.log('Spells recebidas:', spells);
     renderSpells(spells);
