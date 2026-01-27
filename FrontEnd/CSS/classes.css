@@ -45,80 +45,6 @@
      background: linear-gradient(90deg, rgba(146, 39, 143, 0.06), rgba(146, 39, 143, 0.02));
  }
 
- .top-nav {
-     display: flex;
-     align-items: center;
-     justify-content: space-between;
-     gap: 12px;
-     padding: 12px 20px;
-     max-width: 1200px;
-     margin: 0 auto;
- }
-
- .nav-left {
-     display: flex;
-     align-items: center;
-     gap: 10px;
- }
-
- .logo {
-     width: 32px;
-     height: 32px;
-     display: block;
- }
-
- .site-name {
-     font-weight: 700;
-     color: var(--muted);
-     text-decoration: none;
- }
-
- .nav-center {
-     list-style: none;
-     margin: 0;
-     padding: 0;
-     display: flex;
-     gap: 12px;
-     align-items: center;
- }
-
- .nav-center li {
-     position: relative;
-     cursor: default;
-     padding: 6px 8px;
-     border-radius: 6px;
- }
-
- .nav-center li:hover {
-     background: rgba(146, 39, 143, 0.05);
- }
-
- .dropdown-menu {
-     position: absolute;
-     left: 0;
-     top: calc(100% + 6px);
-     background: white;
-     border: 1px solid #eee;
-     padding: 8px 6px;
-     display: none;
-     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
-     border-radius: 6px;
- }
-
- .dropdown:hover .dropdown-menu {
-     display: block;
- }
-
- .dropdown-menu li {
-     padding: 6px 10px;
-     white-space: nowrap;
- }
-
- .dropdown-menu a {
-     text-decoration: none;
-     color: #333;
- }
-
  main {
      max-width: 1200px;
      margin: 18px auto;
@@ -131,17 +57,6 @@
      font-size: 1.6rem;
  }
 
- .topbar nav a {
-     margin-right: 10px;
-     text-decoration: none;
-     color: #4a2a5a;
-     padding: 6px 8px;
-     border-radius: 6px;
- }
-
- .topbar nav a:hover {
-     background: rgba(146, 39, 143, 0.06);
- }
 
  article.antecedente {
      background: white;
@@ -394,3 +309,125 @@
          font-size: 1.4rem;
      }
  }
+
+.SubBarbaro {
+      border: 2px solid var(--corBarbaro);
+     background: white;
+     padding: 16px;
+     margin: 14px 0;
+     border-radius: 10px;
+     box-shadow: 0 6px 20px rgba(20, 10, 30, 0.03);
+
+ }
+
+ .filter-toggle {
+  background-color: #0f3460;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  margin: 10px 0;
+}
+
+.filter-toggle:hover {
+  background-color: #357abd;
+}
+
+.filter-panel {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  background: #f9f9f9;
+  padding: 0 1rem;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.filter-panel.open {
+  max-height: 600px;
+  opacity: 1;
+  padding: 15px 1rem;
+}
+
+.sub-content {
+    display: none;
+    padding: 10px 15px;
+    border-left: 3px solid #a00;
+    margin-bottom: 10px;
+}
+
+.sub-toggle {
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    font-weight: bold;
+    background: #300;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.sub-toggle:hover {
+    background: #500;
+}
+.subclass-panel {
+    display: none;
+}
+
+.subclass-panel.active {
+    display: block;
+}
+
+.barbaro .sub-btn {
+    background-color: var(--corBarbaro);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    margin: 5px 0;
+}
+.barbaro .sub-btn:hover {
+        background-color: #e78da8;
+}
+/* Bardo */
+.bardo .sub-btn{
+    background-color: var(--corBardo);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    margin: 5px 0;
+}
+.bardo .sub-btn:hover {
+    background-color: var(--corBardo2);
+}
+
+ol.subclass1 {
+    margin-left: 25px;
+}
+
+.bruxo .sub-btn{
+    background-color: var(--corBruxo);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    margin: 5px 0;
+}
+.bruxo .sub-btn:hover {
+    background-color: var(--corBruxo2);
+}
