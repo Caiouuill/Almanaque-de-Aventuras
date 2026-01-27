@@ -15,7 +15,7 @@ let spells = [];
 
 async function fetchSpells() {
   try {
-    const res = await fetch('/API/magias');
+    const res = await fetch('/api/magias');
     spells = await res.json();
     console.log('Spells recebidas:', spells);
     renderSpells(spells);
@@ -134,7 +134,7 @@ function applyFilters() {
   // FILTRO POR TEMPO DE CONJURAÇÃO
   const tempoVal = tempoFilter.value.toLowerCase();
   if (tempoVal) {
-    filtered = filtered.filter(spell => spell.tempoConjuracao.toLowerCase() === tempoVal);
+    filtered = filtered.filter(spell => spell.tempoConjuracao?.tipo?.toLowerCase() === tempoVal);
   }
 
   // FILTRO POR LIVRO
