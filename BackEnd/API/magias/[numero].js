@@ -15,6 +15,13 @@ module.exports = async (req, res) => {
       req.body = JSON.parse(req.body);
     }
 
+    if (!req.params) {
+      req.params = {};
+    }
+    if (req.query && typeof req.params.numero === 'undefined') {
+      req.params.numero = req.query.numero;
+    }
+
     if (req.method === 'GET') return magicController.getSpellByNumero(req, res);
     if (req.method === 'PUT') return magicController.updateSpell(req, res);
     if (req.method === 'DELETE') return magicController.deleteSpell(req, res);
