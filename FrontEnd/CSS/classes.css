@@ -383,3 +383,51 @@
     display: block;
 }
 
+.barbaro .sub-btn {
+    background-color: var(--corBarbaro);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    margin: 5px 0;
+}
+.barbaro .sub-btn:hover {
+        background-color: #e78da8;
+}
+/* Bardo */
+.bardo .sub-btn{
+    background-color: var(--corBardo);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    margin: 5px 0;
+}
+.bardo .sub-btn:hover {
+    background-color: var(--corBardo2);
+}
+
+ol.subclass1 {
+    margin-left: 25px;
+}
+
+.bruxo .sub-btn{
+    background-color: var(--corBruxo);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    margin: 5px 0;
+}
+.bruxo .sub-btn:hover {
+    background-color: var(--corBruxo2);
+}
