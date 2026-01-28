@@ -2,6 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
 const magicRoutes = require('./Routes/magicRoutes');
+const itemRoutes = require('./Routes/itemRoutes');
 require('dotenv').config();
 
 const app = express();
@@ -20,6 +21,7 @@ mongoose.connect(process.env.MONGO_URI, {
   .catch(err => console.error('❌ Erro ao conectar:', err));
 
 app.use('/api/magias', magicRoutes);
+app.use('/api/items', itemRoutes);
 
 app.listen(PORT, () => {
   console.log(`🚀 Servidor rodando em http://localhost:${PORT}`);

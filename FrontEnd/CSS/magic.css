@@ -11,90 +11,90 @@ h1 {
 
 /* ================= NAVBAR ================= */
 .top-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #16213e;
-    padding: 10px 20px;
-    color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #16213e;
+  padding: 10px 20px;
+  color: white;
 }
 
 /* Logo e nome */
 .nav-left {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .nav-left .logo {
-    height: 40px;
-    margin-right: 10px;
+  height: 40px;
+  margin-right: 10px;
 }
 
 .site-name {
-    font-weight: bold;
-    font-size: 18px;
-    color: white;
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
   text-decoration: none;
 }
 
 /* Menu central */
 .nav-center {
-    list-style: none;
-    display: flex;
-    gap: 25px;
-    align-items: center;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-center li {
-    position: relative;
-    cursor: pointer;
-    padding: 8px 12px;
-    transition: background 0.3s;
+  position: relative;
+  cursor: pointer;
+  padding: 8px 12px;
+  transition: background 0.3s;
 }
 
 .nav-center li:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
 }
 
 /* Dropdown oculto por padrão */
 .dropdown-menu {
-    display: none;
-    position: absolute;
-    top: 38px;
-    left: 0;
-    background-color: #1a1a2e;
-    min-width: 160px;
-    border-radius: 6px;
-    padding: 5px 0;
-    z-index: 10;
+  display: none;
+  position: absolute;
+  top: 38px;
+  left: 0;
+  background-color: #1a1a2e;
+  min-width: 160px;
+  border-radius: 6px;
+  padding: 5px 0;
+  z-index: 10;
 }
 
 .dropdown-menu li {
-    padding: 8px 12px;
-    color: white;
+  padding: 8px 12px;
+  color: white;
 }
 
 .dropdown-menu li a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 .dropdown-menu li:hover {
-    background-color: #0f3460;
+  background-color: #0f3460;
 }
 
 /* Exibir dropdown ao passar o mouse */
 .dropdown:hover .dropdown-menu {
-    display: block;
+  display: block;
 }
 
 /* Ícone da direita */
 .nav-right {
-    font-size: 18px;
-    cursor: pointer;
+  font-size: 18px;
+  cursor: pointer;
 }
 
 #filters {
@@ -167,8 +167,9 @@ h1 {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: background-color 0.3s ease;
-  margin-left: 200px;
-  margin-right: 200px;
+  margin: 0 auto 16px;
+  width: min(100%, 520px);
+  text-align: center;
 }
 
 .filter-button:hover {
@@ -199,10 +200,7 @@ h1 {
   transition: max-height 0.5s ease, opacity 0.5s ease, padding 0.5s ease;
   padding: 0 20px;
   margin: 0 auto 20px auto;
-  width: fit-content;
-  /* Só ocupa o espaço necessário */
-  margin-left: 200px;
-  margin-right: 200px;
+  width: min(100%, 960px);
 }
 
 /* Quando aberto */
@@ -212,9 +210,59 @@ h1 {
   opacity: 1;
   padding: 15px 20px;
 }
+
 .filtrobaixo {
   display: flex;
   gap: 5px;
+}
+
+@media (max-width: 900px) {
+  .top-nav {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .nav-left {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .nav-center {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  #spells-container {
+    grid-template-columns: 1fr;
+    padding: 0 16px;
+  }
+
+  .filter-panel {
+    padding: 0 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  .filter-item {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .filtrobaixo {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .filter-panel.open {
+    max-height: 900px;
+  }
 }
 
 .filter-panel label {
