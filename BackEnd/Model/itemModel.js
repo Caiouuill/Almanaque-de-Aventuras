@@ -8,29 +8,21 @@ const ItemSchema = new mongoose.Schema(
     origem: {
       type: String,
       enum: [
-        "PHB'14",
-        "PHB'24",
-        "DMG'24",
-        "TCE",
-        "XGE",
-        "WDH",
-        "ERLW",
-        "SCC",
-        "QftIS",
-        "FRHoF",
-        "AAG",
-        "EGW",
-        "SCAG",
-        "JttRC",
-        "HotB",
-        "IDRotF",
-        "FRAiF",
-        "VGM",
-        "DSotDQ",
-        "VRGR",
-        "ToA",
-        "CoS",
-        "OotA",
+        "PHB'24", // Player's Handbook 2024
+        "DMG'24", // Dungeon Master's Guide 2024
+        "MM'24", // Monster Manual 2024
+        "TCE", // Tasha's Cauldron of Everything
+        "XGE", // Xanathar's Guide to Everything
+        "AI", // Acquisitions Incorporated
+        "BGDIA", // Baldur's Gate: Descent into Avernus
+        "ERLW", // Eberron: Rising from the Last War
+        "SCAG", // Sword Coast Adventurer's Guide
+        "MTF", // Mordenkainen's Tome of Foes
+        "VGM", // Volo's Guide to Monsters
+        "XGE", // Xanathar's Guide to Everything
+        "NF", // Netheril`s Fall
+        "ROT", // Rise of Tiamat
+        "EFA", // Eberon: Forge of the Artificer
       ],
       trim: true
     },
@@ -41,14 +33,15 @@ const ItemSchema = new mongoose.Schema(
     raridade: {
       type: String,
       enum: [
-        "nenhuma",
-        "comum",
-        "incomum",
-        "rara",
-        "muito rara",
-        "lendária",
-        "artefato",
-        "desconhecida"
+        "Nenhuma",
+        "Comum",
+        "Incomum",
+        "Rara",
+        "Muito Rara",
+        "Lendária",
+        "Artefato",
+        "Desconhecida",
+        "Especial"
       ],
       default: "nenhuma",
       trim: true
@@ -70,7 +63,6 @@ const ItemSchema = new mongoose.Schema(
         "Instrumento",
         "Foco de Conjuração",
         "Veículo",
-        "Veículo (Espacial)",
         "Montaria",
         "Mercadoria",
         "Item Maravilhoso",
