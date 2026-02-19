@@ -401,42 +401,55 @@
      display: none;
  }
 
- .subclass-panel.active {
-     padding: 5px;
-     display: block;
- }
+.subclass-panel.active {
+    display: block;
+}
 
- .sub-btn {
-     display: inline-block;
-     padding: 8px 12px;
-     background: #444;
-     color: #fff;
-     border: none;
-     border-radius: 4px;
-     cursor: pointer;
-     margin-top: 8px;
- }
+.barbaro .sub-btn {
+    background-color: var(--corBarbaro);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    margin: 5px 0;
+}
+.barbaro .sub-btn:hover {
+        background-color: #e78da8;
+}
+/* Bardo */
+.bardo .sub-btn{
+    background-color: var(--corBardo);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    margin: 5px 0;
+}
+.bardo .sub-btn:hover {
+    background-color: var(--corBardo2);
+}
 
- .sub-btn:hover {
-     background: #666;
- }
+ol.subclass1 {
+    margin-left: 25px;
+}
 
- .sub-btn.active {
-     background: #666;
- }
-
- .barbaro .sub-btn {
-     background: var(--corBarbaro);
- }
-
- .barbaro .sub-btn:hover {
-     background: var(--corbarbaro2);
- }
-
- .barbaro .sub-btn.active {
-     background: var(--corbarbaro2);
- }
-
- ol.subclass1 {
-     padding-left: 25px;
- }
+.bruxo .sub-btn{
+    background-color: var(--corBruxo);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    margin: 5px 0;
+}
+.bruxo .sub-btn:hover {
+    background-color: var(--corBruxo2);
+}
