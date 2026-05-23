@@ -1,0 +1,1687 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Almanaque de Aventuras — Classes</title>
+    <link rel="stylesheet" href="../CSS/classes.css">
+    <link rel="stylesheet" href="../CSS/base.css">
+    <link rel="stylesheet" href="../CSS/componentes.css">-->
+    <link rel="stylesheet" href="../CSS/pages.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v5.15.4/css/all.css" />
+
+
+
+</head>
+
+<body>
+    <header>
+        <nav class="top-nav">
+            <div class="nav-left">
+                <img src="../Icons/Icone Dado x32.png" alt="Logo" class="logo">
+                <a class="site-name" href="index.html">Almanaque de Aventuras</a>
+            </div>
+
+            <ul class="nav-center">
+                <li class="dropdown">Jogadores
+                    <ul class="dropdown-menu">
+                        <li><a href="racas.html">Raças</a></li>
+                        <li><a href="classes.html">Classes</a></li>
+                        <li><a href="talentos.html">Talentos</a></li>
+                        <li><a href="antecedentes.html">Antecedentes</a></li>
+                        <li><a href="items.html">Itens</a></li>
+                        <li><a href="magic.html">Magias</a></li>
+                        <li><a href="GdS.html">Gerador de Status</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">Regras
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Aventuras</a></li>
+                        <li><a href="#">Livros</a></li>
+                        <li><a href="#">Condições</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    Mestre
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Bestiário</a></li>
+                        <li><a href="#">Gerador de Loot</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="nav-right">🔍</div>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="page-title">Resumo das Classes</h1>
+
+        <div class="topbar">
+            <nav aria-label="Navegação de classes">
+                <a href="#barbaro">Bárbaro</a>
+                <a href="#bardo">Bardo</a>
+                <a href="#bruxo">Bruxo</a>
+                <a href="#clerigo">Clérigo</a>
+                <a href="#druida">Druida</a>
+                <a href="#guerreiro">Guerreiro</a>
+                <a href="#ladino">Ladino</a>
+            </nav>
+        </div>
+
+        <!-- ================= BÁRBARO ================= -->
+        <span id="barbaro" class="anchor-target"></span>
+        <article class="barbaro">
+            <h2>BÁRBARO</h2>
+            <p>Combatente brutal que canaliza fúria para aumentar dano, resistência e força.</p>
+
+            <p class="meta">
+                <strong>Dado de Vida:</strong> d12<br>
+                <strong>PV:</strong> 12 + mod de Constituição no 1º nível; 1d12 (ou 7) + mod de Constituição nos níveis
+                posteriores.<br>
+                <strong>Proficiências:</strong> Armaduras leves, médias e escudos; Armas simples e marciais; Testes:
+                Força e Constituição; Perícias: escolha duas entre Adestrar Animais, Atletismo, Intimidação, Natureza,
+                Percepção, Sobrevivência.<br>
+                <strong>Equipamento inicial:</strong> (a) machado grande ou (b) qualquer arma marcial corpo-a-corpo; (a)
+                duas machadinhas ou (b) qualquer arma simples; pacote do explorador; quatro azagaias.
+            </p>
+
+            <h3 class="section-title">Tabela de Progressão (1–20)</h3>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nível</th>
+                            <th>Bônus Prof.</th>
+                            <th>Fúrias</th>
+                            <th>Dano de Fúria</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="nivel">1</td>
+                            <td>+2</td>
+                            <td>2</td>
+                            <td>+2</td>
+                        </tr>
+                        <tr>
+                            <td class="nivel">2</td>
+                            <td>+2</td>
+                            <td>2</td>
+                            <td>+2</td>
+                        </tr>
+                        <tr>
+                            <td class="nivel">3</td>
+                            <td>+2</td>
+                            <td>3</td>
+                            <td>+2</td>
+                        </tr>
+                        <tr>
+                            <td class="nivel">4</td>
+                            <td>+2</td>
+                            <td>3</td>
+                            <td>+2</td>
+                        </tr>
+                        <tr>
+                            <td class="nivel">5</td>
+                            <td>+3</td>
+                            <td>3</td>
+                            <td>+2</td>
+                        </tr>
+                        <tr>
+                            <td class="nivel">6</td>
+                            <td>+3</td>
+                            <td>4</td>
+                            <td>+2</td>
+                        </tr>
+                        <tr>
+                            <td class="nivel">7</td>
+                            <td>+3</td>
+                            <td>4</td>
+                            <td>+2</td>
+                        </tr>
+                        <tr>
+                            <td class="nivel">8</td>
+                            <td>+3</td>
+                            <td>4</td>
+                            <td>+2</td>
+                        </tr>
+                        <tr>
+                            <td class="nivel">9</td>
+                            <td>+4</td>
+                            <td>4</td>
+                            <td>+3</td>
+                        </tr>
+                        <tr>
+                            <td class="nivel">10</td>
+                            <td>+4</td>
+                            <td>4</td>
+                            <td>+3</td>
+                        </tr>
+                        <tr>
+                            <td class="nivel">11</td>
+                            <td>+4</td>
+                            <td>4</td>
+                            <td>+3</td>
+                        </tr>
+                        <tr>
+                            <td class="nivel">12</td>
+                            <td>+4</td>
+                            <td>5</td>
+                            <td>+3</td>
+                        </tr>
+                        <tr>
+                            <td class="nivel">13</td>
+                            <td>+5</td>
+                            <td>5</td>
+                            <td>+3</td>
+                        </tr>
+                        <tr>
+                            <td class="nivel">14</td>
+                            <td>+5</td>
+                            <td>5</td>
+                            <td>+3</td>
+                        </tr>
+                        <tr>
+                            <td class="nivel">15</td>
+                            <td>+5</td>
+                            <td>5</td>
+                            <td>+3</td>
+                        </tr>
+                        <tr>
+                            <td class="nivel">16</td>
+                            <td>+5</td>
+                            <td>5</td>
+                            <td>+4</td>
+                        </tr>
+                        <tr>
+                            <td class="nivel">17</td>
+                            <td>+6</td>
+                            <td>6</td>
+                            <td>+4</td>
+                        </tr>
+                        <tr>
+                            <td class="nivel">18</td>
+                            <td>+6</td>
+                            <td>6</td>
+                            <td>+4</td>
+                        </tr>
+                        <tr>
+                            <td class="nivel">19</td>
+                            <td>+6</td>
+                            <td>6</td>
+                            <td>+4</td>
+                        </tr>
+                        <tr>
+                            <td class="nivel">20</td>
+                            <td>+6</td>
+                            <td>Infinito</td>
+                            <td>+4</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 class="section-title">Habilidades de Classe (Por Nivel)</h3>
+            <h3 class="resumoNivel"><strong>Nivel 1º</strong></h3>
+            <ul>
+                <li><strong>Fúria:</strong> ação bônus — resistência a concussão, cortante e perfurante; condições e
+                    duração conforme a tabela; não é possível lançar magias enquanto furioso; recupera usos com descanso
+                    longo.</li>
+                <li><strong>Defesa sem Armadura:</strong> CA = 10 + mod Des + mod Con (pode usar escudo).</li>
+
+            </ul>
+            <h3 class="resumoNivel"><strong>Nivel 2º</strong></h3>
+            <ul>
+                <li><strong>Ataque Descuidado:</strong> primeiro ataque corpo a corpo do turno com vantagem; concede
+                    vantagem a inimigos contra você até o próximo turno.</li>
+                <li><strong>Senso de Perigo:</strong> vantagem em TR de Destreza para efeitos que puder ver (armadilhas,
+                    magias).</li>
+            </ul>
+            <h3 class="resumoNivel"><strong>Nivel 3º</strong></h3>
+            <ul>
+                <li><strong>Caminho Primitivo:</strong> Escolha entre o caminho do <strong>Berserker</strong> ou do
+                    <strong>Guerreiro Totêmico.</strong>
+                </li>
+            </ul>
+            <h3 class="resumoNivel"><strong>Nivel 4º</strong></h3>
+            <ul>
+                <li><strong>Aumento de Habilidade:</strong> Aumente uma habilidade em dois ou duas em um (Máximo 20).
+                </li>
+            </ul>
+            <h3 class="resumoNivel"><strong>Nivel 5º</strong></h3>
+            <ul>
+                <li><strong>Ataque Extra:</strong> Quando usar ação Atacar, pode atacar duas vezes.</li>
+                <li><strong>Movimento Veloz:</strong> Seu deslocamento aumenta em 3 metros se não estiver usando
+                    armadura.</li>
+            </ul>
+            <h3 class="resumoNivel"><strong>Nivel 6º</strong></h3>
+            <ul>
+                <li><strong>Característica de Caminho</strong></li>
+            </ul>
+            <h3 class="resumoNivel"><strong>Nivel 7º</strong></h3>
+            <ul>
+                <li><strong>Instinto Selvagem:</strong> Vantagem rolagens de iniciativa. Se for surpreendido e não estar
+                    incapacitado, pode agir normalmente se entrar em fúria como primeira ação.</li>
+            </ul>
+            <h3 class="resumoNivel"><strong>Nivel 8º</strong></h3>
+            <ul>
+                <li><strong>Aumento de Habilidade:</strong> Aumente uma habilidade em dois ou duas em um (Máximo 20).
+                </li>
+            </ul>
+            <h3 class="resumoNivel"><strong>Nivel 9º</strong></h3>
+            <ul>
+                <li><strong>Critico Brutal:</strong> Pode rolar 1 dado adicional da arma ao determinar dano crítico de
+                    um ataque corpo a corpo.</li>
+            </ul>
+            <h3 class="resumoNivel"><strong>Nivel 10º</strong></h3>
+            <ul>
+                <li><strong>Características de Caminho.</strong></li>
+            </ul>
+            <h3 class="resumoNivel"><strong>Nivel 11º</strong></h3>
+            <ul>
+                <li><strong>Furia Implacavel:</strong> Enquanto estiver em Fúria, se chegar a 0 PV mas não morrer, pode
+                    fazer Teste de Resistência de Constituição (CD 10), se passar fica com 1 PV. Cada vez que usar isso
+                    após a primeira a CD aumenta em 5. Se terminar um descanso curto ou longo, a CD volta a 10.</li>
+            </ul>
+            <h3 class="resumoNivel"><strong>Nivel 12º</strong></h3>
+            <ul>
+                <li><strong>Aumento de Habilidade:</strong> Aumente uma habilidade em dois ou duas em um (Máximo 20).
+                </li>
+            </ul>
+            <h3 class="resumoNivel"><strong>Nivel 13º</strong></h3>
+            <ul>
+                <li><strong>Critico Brutal:</strong> Pode rolar 2 dados adicionais da arma ao determinar dano crítico de
+                    um ataque corpo a corpo.</li>
+            </ul>
+            <h3 class="resumoNivel"><strong>Nivel 14º</strong></h3>
+            <ul>
+                <li><strong>Característica de Caminho.</strong></li>
+            </ul>
+            <h3 class="resumoNivel"><strong>Nivel 15º</strong></h3>
+            <ul>
+                <li><strong>Furia Persistente:</strong> Fúria só acaba se ficar inconsciente ou você decidir encerrá-la.
+                </li>
+            </ul>
+            <h3 class="resumoNivel"><strong>Nivel 16º</strong></h3>
+            <ul>
+                <li><strong>Aumento de Habilidade:</strong> Aumente uma habilidade em dois ou duas em um (Máximo 20).
+                </li>
+            </ul>
+            <h3 class="resumoNivel"><strong>Nivel 17º</strong></h3>
+            <ul>
+                <li><strong>Critico Brutal:</strong> Pode rolar 3 dados adicionais da arma ao determinar dano crítico de
+                    um ataque corpo a corpo.</li>
+            </ul>
+            <h3 class="resumoNivel"><strong>Nivel 18º</strong></h3>
+            <ul>
+                <li><strong>Força Invencivel:</strong> Se o resultado em um teste de Força for menor que o valor na
+                    habilidade Força, pode usar seu valor de habilidade no lugar.</li>
+            </ul>
+            <h3 class="resumoNivel"><strong>Nivel 19º</strong></h3>
+            <ul>
+                <li><strong>Aumento de habilidade:</strong> Aumente uma habilidade em dois ou duas em um (Máximo 20).
+                </li>
+            </ul>
+            <h3 class="resumoNivel"><strong>Nivel 20º</strong></h3>
+            <ul>
+                <li><strong>Campeão Primitivo: </strong> Sua Força e Constituição aumentam em 4. Seu valor máximo nestas
+                    habilidade agora é 24</li>
+            </ul>
+
+
+
+
+            <h3 class="section-title">Caminhos (subclasses)</h3>
+
+            <div class="subclass-buttons">
+                <button class="sub-btn" data-tab="berserker">Berserker PHB`24</button>
+                <button class="sub-btn" data-tab="totemico">Guerreiro Totêmico </button>
+                <button class="sub-btn" data-tab="Bestial">Bestial TCoE</button>
+                <button class="sub-btn" data-tab="Guardião Ancestral">Guardião Ancestral </button>
+                <button class="sub-btn" data-tab="Guardião da Batalha">Guardião da Batalha </button>
+                <button class="sub-btn" data-tab="Magia Selvagem">Magia Selvagem PHB`24</button>
+                <button class="sub-btn" data-tab="Zealot">Zealot PHB`24</button>
+            </div>
+
+            <div class="subclass-panel" data-content="berserker">
+                <h4>Caminho do Berserker PHB'24</h4>
+                <ul class="subclass">
+                    <li> <b>Nivel 3º</b> — <em>Frenezi</em>: pode entrar em frênezi quando em fúria e fazer ataque extra
+                        como ação
+                        bônus;
+                        sofre 1 nível de exaustão ao terminar a fúria.</li>
+                    <li><b>Nivel 6º</b> — <em>Fúria Inabalável</em>: não pode ser amedrontado ou encantado enquanto em
+                        fúria.</li>
+                    <li><b>Nivel 10º</b> — Presença Intimidadora: Escolha uma criatura até 9 m de você. Se ela puder
+                        vê-lo ou
+                        ouvi-lo,
+                        deve passar no teste de resistência de Sabedoria (CD = 8 + bônus de proficiência + mod de
+                        Carisma)
+                        ou fica amedrontada até o final do seu próximo turno. Em outros turnos você pode usar sua ação
+                        para
+                        prolongar o efeito. O efeito acaba se a criatura terminar o turno dela fora da linha de visão ou
+                        a
+                        mais de 18 m de você. Se ela obter êxito no teste de resistência, você não pode afeta-la dessa
+                        maneira por 24 horas.</li>
+                    <li><b>Nivel 14º</b> — Retalição: Quando sofrer dano de uma criatura à 1,5 m de você, pode usar sua
+                        reação para
+                        fazer
+                        um ataque corpo a corpo contra aquela criatura. </li>
+                </ul>
+            </div>
+
+            <div class="subclass-panel" data-content="totemico">
+                <h4>Caminho do Guerreiro Totêmico</h4>
+                <ul class="subclass">
+                    <li><b>Nivel 3º</b> — Caçador Espiritual e Espírito Totêmico: Pode conjurar as magias falar com
+                        animas e sentido
+                        animal, mas somente como ritual.
+                        Pode escolher qualquer um entre:
+                        <strong>Urso:</strong> Quando em fúria fica resistente a todos os tipos de dano, exceto
+                        psíquico.
+                        <strong>Águia:</strong> Quando em fúria e sem usar armadura pesada, criaturas tem desvantagem em
+                        ataques de
+                        oportunidade contra você e você pode usar ação corrida como ação bônus.
+                        <strong>Lobo:</strong> Quando em fúria, seus aliados têm vantagem em ataque corpo a corpo contra
+                        criaturas inimigas a
+                        1,5 m de você.
+                    </li>
+                    <li><b>Nivel 6º</b> — Aspecto da Fera:Pode escolher qualquer um entre:
+                        <strong>Urso:</strong> Sua capacidade de carga (incluindo carga máxima e sustentação) é dobrada
+                        e
+                        você tem vantagem
+                        nos testes de Força feitos para empurrar, puxar, erguer ou quebrar objetos.
+                        <strong>Águia:</strong> Consegue enxergar 1 milha (1,6 km) sem dificuldade, podendo ver detalhes
+                        como se estiver
+                        olhando a 30 m. A penumbra não impõe desvantagem nos testes de Sabedoria (Percepção).
+                        <strong>Lobo:</strong> Consegue rastrear criaturas enquanto viaja rápido e pode se mover
+                        furtivamente enquanto viaja
+                        em ritmo normal.
+                    </li>
+                    <li><b>Nivel 10º</b> — Andarilho Espiritual: Consegue conjurar magia comunhão com a natureza, como
+                        ritual. Uma
+                        versão
+                        espiritual de um dos animais totêmicos aparece para dar a informação.</li>
+                    <li><b>Nivel 14º</b> — Harmonização Totêmica: Pode escolher qualquer um entre:
+                        <strong>Urso:</strong> Quando em fúria, inimigos a 1,5 m de você tem desvantagem em ataques
+                        contra alvos que não
+                        sejam você ou outra pessoa com essa habilidade.
+                        <strong>Águia:</strong> Quando em fúria, tem deslocamento de voo igual seu deslocamento em
+                        terra. Caí se terminar o
+                        turno no ar ou não ter algo lhe sustentando.
+                        <strong>Lobo:</strong> Quando em fúria, pode usar uma ação bônus para derrubar uma criatura
+                        Grande ou menor que você
+                        acertar com um ataque corpo a corpo.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="subclass-panel" data-content="Bestial">
+                <h4>Caminho do Bestial</h4>
+                <ul class="subclass">
+                    <li><b>Nivel 3º</b> — :</li>
+                    <li><b>Nivel 6º</b> — :</li>
+                    <li><b>Nivel 10º</b> — :</li>
+                    <li><b>Nivel 14º</b> — :</li>
+                </ul>
+            </div>
+
+            <div class="subclass-panel" data-content="Guardião Ancestral">
+                <h4>Caminho do Guardião Ancestral</h4>
+                <ul class="subclass">
+                    <li><b>Nivel 3º</b> — :</li>
+                    <li><b>Nivel 6º</b> — :</li>
+                    <li><b>Nivel 10º</b> — :</li>
+                    <li><b>Nivel 14º</b> — :</li>
+                </ul>
+            </div>
+
+            <div class="subclass-panel" data-content="Guardião da Batalha">
+                <h4>Caminho do Guardião da Batalha</h4>
+                <ul class="subclass">
+                    <li><b>Nivel 3º</b> — :</li>
+                    <li><b>Nivel 6º</b> — :</li>
+                    <li><b>Nivel 10º</b> — :</li>
+                    <li><b>Nivel 14º</b> — :</li>
+                </ul>
+            </div>
+
+            <div class="subclass-panel" data-content="Magia Selvagem">
+                <h4>Caminho da Magia Selvagem</h4>
+                <ul class="subclass">
+                    <li><b>Nivel 3º</b> — :</li>
+                    <li><b>Nivel 6º</b> — :</li>
+                    <li><b>Nivel 10º</b> — :</li>
+                    <li><b>Nivel 14º</b> — :</li>
+                </ul>
+            </div>
+
+            <div class="subclass-panel" data-content="Zealot">
+                <h4>Caminho do Zealot</h4>
+                <ul class="subclass">
+                    <li><b>Nivel 3º</b> — :</li>
+                    <li><b>Nivel 6º</b> — :</li>
+                    <li><b>Nivel 10º</b> — :</li>
+                    <li><b>Nivel 14º</b> — :</li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- ================= BARDO ================= -->
+        <span id="bardo" class="anchor-target"></span>
+        <article class="bardo">
+            <h2>BARDO</h2>
+            <p>Mestre da performance, inspiração e magia versátil; usa instrumentos como foco.</p>
+
+            <p class="meta">
+                <strong>Dado de Vida:</strong> d8<br>
+                <strong>PV:</strong> 8 + mod de Constituição no 1º nível; 1d8 (ou 5) + mod de Constituição nos níveis
+                posteriores.<br>
+                <strong>Proficiências:</strong> Armaduras leves; armas simples, bestas de mão, espadas curtas, florete;
+                Ferramentas: escolha 3 instrumentos; TR: Destreza, Carisma; Perícias: escolha 3.
+            </p>
+
+            <h3 class="section-title">Espaços de Magia por Nível (1–20)</h3>
+            <div class="table-wrap">
+                <!-- TABELA COMPLETA DO BARDO: Nível, Bônus Prof., Truques Conhec., Magias Conhec., Espaços 1º-9º -->
+                <table>
+                    <caption>Progressão de Magias — Bardo</caption>
+                    <thead>
+                        <tr>
+                            <th>Nível</th>
+                            <th>Bônus Prof.</th>
+                            <th>Truques Conhec.</th>
+                            <th>Magias Conhec.</th>
+                            <th>1º</th>
+                            <th>2º</th>
+                            <th>3º</th>
+                            <th>4º</th>
+                            <th>5º</th>
+                            <th>6º</th>
+                            <th>7º</th>
+                            <th>8º</th>
+                            <th>9º</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="nivel">1º</td>
+                            <td>+2</td>
+                            <td>2</td>
+                            <td>4</td>
+                            <td>2</td>
+                            <td>—</td>
+                            <td>—</td>
+                            <td>—</td>
+                            <td>—</td>
+                            <td>—</td>
+                            <td>—</td>
+                            <td>—</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td class="nivel">2º</td>
+                            <td>+2</td>
+                            <td>2</td>
+                            <td>5</td>
+                            <td>3</td>
+                            <td>—</td>
+                            <td>—</td>
+                            <td>—</td>
+                            <td>—</td>
+                            <td>—</td>
+                            <td>—</td>
+                            <td>—</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td class="nivel">3º</td>
+                            <td>+2</td>
+                            <td>2</td>
+                            <td>6</td>
+                            <td>4</td>
+                            <td>2</td>
+                            <td>—</td>
+                            <td>—</td>
+                            <td>—</td>
+                            <td>—</td>
+                            <td>—</td>
+                            <td>—</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td class="nivel">4º</td>
+                            <td>+2</td>
+                            <td>3</td>
+                            <td>7</td>
+                            <td>4</td>
+                            <td>3</td>
+                            <td>—</td>
+                            <td>—</td>
+                            <td>—</td>
+                            <td>—</td>
+                            <td>—</td>
+                            <td>—</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td class="nivel">5º</td>
+                            <td>+3</td>
+                            <td>3</td>
+                            <td>8</td>
+                            <td>4</td>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>—</td>
+                            <td>—</td>
+                            <td>—</td>
+                            <td>—</td>
+                            <td>—</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td class="nivel">6º</td>
+                            <td>+3</td>
+                            <td>3</td>
+                            <td>9</td>
+                            <td>4</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>—</td>
+                            <td>—</td>
+                            <td>—</td>
+                            <td>—</td>
+                            <td>—</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td class="nivel">7º</td>
+                            <td>+3</td>
+                            <td>3</td>
+                            <td>10</td>
+                            <td>4</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>1</td>
+                            <td>—</td>
+                            <td>—</td>
+                            <td>—</td>
+                            <td>—</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td class="nivel">8º</td>
+                            <td>+3</td>
+                            <td>3</td>
+                            <td>11</td>
+                            <td>4</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>—</td>
+                            <td>—</td>
+                            <td>—</td>
+                            <td>—</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td class="nivel">9º</td>
+                            <td>+4</td>
+                            <td>3</td>
+                            <td>12</td>
+                            <td>4</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>1</td>
+                            <td>—</td>
+                            <td>—</td>
+                            <td>—</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td class="nivel">10º</td>
+                            <td>+4</td>
+                            <td>4</td>
+                            <td>14</td>
+                            <td>4</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>—</td>
+                            <td>—</td>
+                            <td>—</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td class="nivel">11º</td>
+                            <td>+4</td>
+                            <td>4</td>
+                            <td>15</td>
+                            <td>4</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>—</td>
+                            <td>—</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td class="nivel">12º</td>
+                            <td>+4</td>
+                            <td>4</td>
+                            <td>15</td>
+                            <td>4</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>—</td>
+                            <td>—</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td class="nivel">13º</td>
+                            <td>+5</td>
+                            <td>4</td>
+                            <td>16</td>
+                            <td>4</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>—</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td class="nivel">14º</td>
+                            <td>+5</td>
+                            <td>4</td>
+                            <td>18</td>
+                            <td>4</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>—</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td class="nivel">15º</td>
+                            <td>+5</td>
+                            <td>4</td>
+                            <td>19</td>
+                            <td>4</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td class="nivel">16º</td>
+                            <td>+5</td>
+                            <td>4</td>
+                            <td>19</td>
+                            <td>4</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td class="nivel">17º</td>
+                            <td>+6</td>
+                            <td>4</td>
+                            <td>20</td>
+                            <td>4</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td class="nivel">18º</td>
+                            <td>+6</td>
+                            <td>4</td>
+                            <td>22</td>
+                            <td>4</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td class="nivel">19º</td>
+                            <td>+6</td>
+                            <td>4</td>
+                            <td>22</td>
+                            <td>4</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td class="nivel">20º</td>
+                            <td>+6</td>
+                            <td>4</td>
+                            <td>22</td>
+                            <td>4</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>2</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 class="section-title">Equipamento inicial</h3>
+            <ul>
+                <li>(a) Florete, (b) Espada longa, ou (c) qualquer arma simples</li>
+                <li>(a) Pacote do diplomata ou (b) Pacote do artista</li>
+                <li>(a) Um alaúde ou (b) outro instrumento musical</li>
+                <li>Corselete de couro e uma adaga</li>
+            </ul>
+
+            <h3 class="section-title">Habilidades de Classe</h3>
+            <ul>
+                <li><strong>Inspiração do Bardo</strong>: dado de inspiração que escala (d6 → d12) e é gasto para ajudar
+                    testes/ataques/TRs.</li>
+                <li><strong>Pau pra Toda Obra</strong>: pode adicionar metade do bônus de proficiência em testes que não
+                    incluam proficiência.</li>
+                <li><strong>Canção do Descanso</strong>: cura adicional durante descanso curto.</li>
+                <li>Progressões: Colégio da Bravura (foco marcial) e Colégio do Saber (foco arcano/perícias) com
+                    características específicas (Ataque Extra, Segredos Mágicos, etc.).</li>
+            </ul>
+            <div class="subclass-buttons">
+                <button class="sub-btn" data-tab="danca">Dança</button>
+                <button class="sub-btn" data-tab="conhecimento">Conhecimento</button>
+                <button class="sub-btn" data-tab="eloquencia">Eloquência</button>
+                <button class="sub-btn" data-tab="glamour">Glamour</button>
+                <button class="sub-btn" data-tab="bravura">Bravura</button>
+                <button class="sub-btn" data-tab="criacao">Criação</button>
+                <button class="sub-btn" data-tab="luar">Luar</button>
+                <button class="sub-btn" data-tab="espiritos">Espíritos</button>
+                <button class="sub-btn" data-tab="espadas">Espadas</button>
+            </div>
+
+            <div class="subclass-panel" data-content="danca">
+                <h4>Colégio da Dança</h4>
+                <ul class="subclass">
+                    <li><b>Nivel 3°</b> — <strong>Ginga Fascinante:</strong> Enquanto você não estiver vestindo armadura
+                        ou
+                        empunhando
+                        um Escudo, adquire os seguintes benefícios.
+                        <ol class="subclass1">
+                            <li><strong>Dança Virtuosa:</strong> Você tem Vantagem em qualquer
+                                teste de Carisma (Atuação) que envolva você
+                                dançando.</li>
+                            <li><strong>Dano de Bardo:</strong> Você pode usar Destreza em vez de
+                                Força para as jogadas de ataque de seus Ataques Desarmados.
+                                Quando você causar dano com um Ataque
+                                Desarmado, pode causar dano Contundente igual ao
+                                resultado do dado da sua Inspiração de Bardo mais seu
+                                modificador de Destreza, em vez do dano normal do
+                                ataque. Esse uso não gasta o dado. </li>
+                            <li><strong>Defesa sem armadura:</strong> Sua Classe de Armadura base
+                                é igual a 10 mais seus modificadores de Destreza e
+                                Carisma.</li>
+                            <li><strong>Golpes Ágeis:</strong> Quando você gastar um uso da sua Inspiração
+                                de Bardo como parte de uma ação, Ação Bônus
+                                ou Reação, pode realizar um Ataque Desarmado como
+                                parte dessa ação, Ação Bônus ou Reação.</li>
+                        </ol>
+                    </li>
+                    <li><b>Nivel 6°</b> — <strong>Gingado Coordenado:</strong> Ao jogar Iniciativa, você pode gastar um
+                        uso da sua
+                        Inspiração de Bardo se não estiver com a condição
+                        Incapacitado. Ao realizar isso, jogue o dado da sua
+                        Inspiração de Bardo; você e cada aliado a até 9 metros
+                        de você que puder ver ou ouvir você adquire um bônus
+                        na Iniciativa igual ao número jogado.</li>
+                    <li><b>Nivel 6°</b> — <strong>Movimento Inspirador:</strong>Quando um inimigo à sua vista encerra o
+                        turno dele a
+                        até 1,5 metro de você, você pode executar uma Reação
+                        e gastar um uso da sua Inspiração de Bardo para se
+                        mover até metade do seu Deslocamento. Em seguida,
+                        um aliado à sua escolha a até 9 metros de você também
+                        pode se mover até metade do Deslocamento dele usando
+                        a própria Reação.
+                        Nenhum movimento dessa característica provoca
+                        Ataques de Oportunidade</li>
+                    <li><b>Nivel 14°</b> — <strong>Evasão Liderada:</strong>Se você for alvo de um efeito que permita
+                        uma salvaguarda
+                        de Destreza para receber apenas metade do
+                        dano, você não recebe dano algum se for bem-sucedido
+                        e apenas metade se falhar. Se criaturas até 1,5 metro
+                        de você também realizarem a salvaguarda, você pode
+                        compartilhar esse benefício com elas.
+                        Você não pode usar esta característica se estiver com
+                        a condição Incapacitado.</li>
+                </ul>
+            </div>
+
+            <div class="subclass-panel" data-content="conhecimento">
+                <h4>Colégio do Conhecimento</h4>
+                <ul class="subclass">
+                    <li><b>Nivel 3°</b> — <strong>Palavras de Interrupção:</strong>Você aprende a usar sua sagacidade
+                        para distrair,
+                        confundir e diminuir sobrenaturalmente a confiança
+                        e a competência dos outros. Quando uma criatura à
+                        sua vista a até 18 metros de você realizar uma jogada
+                        de dano, ou for bem-sucedida em um teste de atributo
+                        ou jogada de ataque, você pode executar uma Reação
+                        para gastar um uso da sua Inspiração de Bardo. Jogue
+                        o dado de Inspiração de Bardo e subtraia o número
+                        jogado do resultado da criatura, reduzindo o dano ou
+                        transformando potencialmente o sucesso em fracasso.</li>
+                    <li><b>Nivel 3°</b> — <strong>Proficiências Bônus:</strong> Você adquire proficiência em três
+                        perícias à sua
+                        escolha</li>
+                    <li><b>Nivel 6°</b> — <strong>Descobertas Mágicas:</strong>Você aprende duas magias à sua escolha.
+                        Essas magias
+                        podem vir da lista de magias de Clérigo, Druida ou
+                        Mago, ou uma combinação dessas listas (veja a seção
+                        da classe para a respectiva lista de magias). A magia escolhida
+                        deve ser um truque ou uma magia para a qual
+                        você tenha espaços de magia disponíveis, conforme
+                        mostrado na tabela Características de Bardo.
+                        Você sempre tem as magias escolhidas preparadas
+                        e, sempre que adquirir um novo nível de Bardo, pode
+                        substituir uma das magias por outra que atenda a esses
+                        requisitos</li>
+                    <li><b>Nivel 14°</b> — <strong>Perícia Inigualável:</strong>Quando você realizar um teste de
+                        atributo ou uma
+                        jogada de ataque e falhar, pode gastar um uso da Inspiração
+                        de Bardo; jogue o dado da Inspiração de Bardo
+                        e adicione o resultado jogado ao d20, transformando
+                        potencialmente a falha em sucesso. Se falhar, o uso da
+                        Inspiração de Bardo não é gasto.</li>
+                </ul>
+            </div>
+
+            <div class="subclass-panel" data-content="eloquencia">
+                <h4>Colégio da Eloquência</h4>
+                <ul class="subclass">
+                    <li><b>Nivel 3º</b> — :</li>
+                    <li><b>Nivel 6º</b> — :</li>
+                    <li><b>Nivel 10º</b> — :</li>
+                    <li><b>Nivel 14º</b> — :</li>
+                </ul>
+            </div>
+
+            <div class="subclass-panel" data-content="glamour">
+                <h4>Colégio do Glamour</h4>
+                <ul class="subclass">
+                    <li><b>Nivel 3°</b> — <strong>Magia Fascinante:</strong> Você sempre está com as magias Enfeitiçar
+                        Pessoa e
+                        Reflexos preparadas. Além disso, imediatamente após você conjurar uma
+                        magia de Encantamento ou Ilusão usando um espaço
+                        de magia, pode fazer com que uma criatura à sua vista
+                        a até 18 metros de você realize uma salvaguarda de
+                        Sabedoria contra a CD para evitar sua magia. Se falhar,
+                        o alvo tem a condição Amedrontado ou Enfeitiçado (à
+                        sua escolha) por 1 minuto. O alvo repete a salvaguarda
+                        no final de cada um dos próprios turnos, e encerra o
+                        efeito em caso de sucesso.
+                        Depois de usar este benefício, você não pode utilizá-
+                        lo novamente até completar um Descanso Longo.
+                        Você também pode restaurar um uso gastando uma
+                        Inspiração de Bardo (nenhuma ação é necessária).</li>
+                    <li><b>Nivel 3°</b> — <strong>Manto de Inspiração:</strong> Você pode canalizar magia feérica em uma
+                        canção ou
+                        dança, revigorando os outros. Como um Ação Bônus,
+                        você pode usar uma das suas Inspirações de Bardo,
+                        jogando um dado de Inspiração de Bardo. Escolha um
+                        número de criaturas a até 18 metros de você igual ao
+                        seu modificador de Carisma (no mínimo uma criatura).
+                        Cada uma dessas criaturas recebe um número de Pontos
+                        de Vida Temporários igual a duas vezes o número
+                        jogado no dado de Inspiração de Bardo e, então, cada
+                        uma pode executar uma Reação para se mover até o
+                        máximo do Deslocamento sem provocar Ataques de
+                        Oportunidade.</li>
+                    <li><b>Nivel 6°</b> — <strong>Manto de Majestade:</strong> Você tem sempre a magia Comando
+                        preparada.
+                        Como uma Ação Bônus, você pode conjurar Comando
+                        sem gastar um espaço de magia e assumir uma aparência
+                        sobrenatural por 1 minuto ou até que sua Concentração
+                        se quebre. Durante esse tempo, você pode
+                        conjurar Comando como uma Ação Bônus sem gastar
+                        um espaço de magia.
+                        Qualquer criatura que está com a condição Enfeitiçado
+                        por você falha automaticamente em uma salvaguarda
+                        contra o Comando que você conjurar com esta
+                        característica.
+                        Após usar esta característica, você não pode utilizá-la
+                        novamente até completar um Descanso Longo. Você
+                        também pode restaurar seu uso gastando um espaço
+                        de magia de 3º círculo ou superior (nenhuma ação é
+                        necessária).</li>
+                    <li><b>Nivel 14°</b> — <strong>Majestade Inquebrável:</strong> Como uma Ação Bônus, você pode
+                        assumir uma
+                        presença
+                        majestosamente mágica por 1 minuto ou até que
+                        tenha a condição Incapacitado. Por essa duração, sempre
+                        que qualquer criatura o atinge com uma jogada de
+                        ataque pela primeira vez em um turno, o atacante deve
+                        ser bem-sucedido em uma salvaguarda de Carisma contra
+                        a CD para evitar sua magia, ou o ataque falha, pois
+                        a criatura retrai diante de sua majestade.
+                        Uma vez que você assume essa presença majestosa,
+                        não pode fazê-lo novamente até completar um Descanso
+                        Curto ou Longo.</li>
+                </ul>
+            </div>
+
+            <div class="subclass-panel" data-content="bravura">
+                <h4>Colégio da Bravura</h4>
+                <ul class="subclass">
+                    <li><b>Nivel 3º</b> — <strong>Inspiração em Combate</strong>: Uma criatura que possui um dado de
+                        Inspiração
+                        de Bardo seu pode utilizá-lo para um dos seguintes
+                        efeitos.
+                        <ol class="subclass1">
+                            <li><strong>Defensivo.</strong> Quando a criatura é atingida por uma
+                                jogada de ataque, pode executar a própria Reação
+                                para jogar o dado da Inspiração de Bardo e adicionar
+                                o resultado jogado à própria CA contra aquele ataque,
+                                potencialmente fazendo com que o ataque erre.</li>
+                            <li><strong>Ofensivo.</strong> Imediatamente após a criatura atingir um
+                                alvo com uma jogada de ataque, ela pode jogar o dado
+                                da Inspiração de Bardo e adicionar o resultado jogado
+                                ao dano do ataque contra o alvo.</li>
+                        </ol>
+                    <li><b>Nivel 3°</b> — <strong>Treinamento Marcial</strong>: Você adquire proficiência com armas
+                        Marciais,
+                        armaduras Médias e treinamento com Escudos.
+                        Além disso, você pode usar uma arma Simples ou
+                        Marcial como Foco de Conjuração para conjurar magias
+                        da sua lista de magias de Bardo. </li>
+                    <li><b>Nivel 6°</b> — <strong>Ataque Extra</strong>:Você pode atacar duas vezes, em vez de uma,
+                        sempre
+                        que executar a ação Atacar no seu turno.
+                        Além disso, você pode conjurar um de seus truques
+                        que tenha um tempo de conjuração de uma ação no
+                        lugar de um desses ataques.</li>
+                    <li><b>Nivel 14°</b> — <strong>Magia de Batalha</strong>: Após conjurar uma magia que tenha um tempo
+                        de
+                        conjuração de uma ação, você pode realizar um ataque
+                        com uma arma como uma Ação Bônus.</li>
+                </ul>
+            </div>
+
+            <div class="subclass-panel" data-content="criacao">
+                <h4>Colégio da Criação</h4>
+                <ul class="subclass">
+                    <li><b>Nivel 3º</b> — :</li>
+                    <li><b>Nivel 6º</b> — :</li>
+                    <li><b>Nivel 10º</b> — :</li>
+                    <li><b>Nivel 14º</b> — :</li>
+                </ul>
+            </div>
+
+            <div class="subclass-panel" data-content="luar">
+                <h4>Colégio do Luar</h4>
+                <ul class="subclass">
+                    <li><b>Nivel 3º</b> — :</li>
+                    <li><b>Nivel 6º</b> — :</li>
+                    <li><b>Nivel 10º</b> — :</li>
+                    <li><b>Nivel 14º</b> — :</li>
+                </ul>
+            </div>
+
+            <div class="subclass-panel" data-content="espiritos">
+                <h4>Colégio dos Espíritos</h4>
+                <ul class="subclass">
+                    <li><b>Nivel 3º</b> — :</li>
+                    <li><b>Nivel 6º</b> — :</li>
+                    <li><b>Nivel 10º</b> — :</li>
+                    <li><b>Nivel 14º</b> — :</li>
+                </ul>
+            </div>
+
+            <div class="subclass-panel" data-content="espadas">
+                <h4>Colégio das Espadas</h4>
+                <ul class="subclass">
+                    <li><b>Nivel 3º</b> — :</li>
+                    <li><b>Nivel 6º</b> — :</li>
+                    <li><b>Nivel 10º</b> — :</li>
+                    <li><b>Nivel 14º</b> — :</li>
+                </ul>
+            </div>
+
+        </article>
+
+        <!-- ================= BRUXO ================= -->
+        <span id="bruxo" class="anchor-target"></span>
+        <article class="bruxo">
+            <h2>BRUXO</h2>
+            <p>Pacto com um patrono extraplanar; poucas magias conhecidas, invocações místicas e recursos recuperados em
+                descanso curto.</p>
+
+            <p class="meta">
+                <strong>Dado de Vida:</strong> d8<br>
+                <strong>PV:</strong> 8 + mod de Constituição no 1º; 1d8 (ou 5) + mod de Constituição nos
+                posteriores.<br>
+                <strong>Proficiências:</strong> Armaduras leves; armas simples; TR: Sabedoria, Carisma; Perícias:
+                escolha 2 entre Arcanismo, Enganação, História, Intimidação, Investigação, Natureza, Religião.
+            </p>
+
+            <h3 class="section-title">Tabela de Progressão (resumo)</h3>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nível</th>
+                            <th>Bônus Prof.</th>
+                            <th>Truques</th>
+                            <th>Magias Conhecidas</th>
+                            <th>Espaços</th>
+                            <th>Nível do Espaço</th>
+                            <th>Invocações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>+2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>1º</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>+2</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>2</td>
+                            <td>1º</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>+2</td>
+                            <td>2</td>
+                            <td>4</td>
+                            <td>2</td>
+                            <td>2º</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>+2</td>
+                            <td>3</td>
+                            <td>5</td>
+                            <td>2</td>
+                            <td>2º</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>+3</td>
+                            <td>3</td>
+                            <td>6</td>
+                            <td>2</td>
+                            <td>3º</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>+3</td>
+                            <td>3</td>
+                            <td>7</td>
+                            <td>2</td>
+                            <td>3º</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>3+</td>
+                            <td>3</td>
+                            <td>8</td>
+                            <td>2</td>
+                            <td>4º</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>+3</td>
+                            <td>2</td>
+                            <td>9</td>
+                            <td>2</td>
+                            <td>4º</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>+4</td>
+                            <td>3</td>
+                            <td>10</td>
+                            <td>2</td>
+                            <td>5º</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>+4</td>
+                            <td>4</td>
+                            <td>10</td>
+                            <td>2</td>
+                            <td>5º</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>+4</td>
+                            <td>4</td>
+                            <td>11</td>
+                            <td>3</td>
+                            <td>5º</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>+5</td>
+                            <td>4</td>
+                            <td>11</td>
+                            <td>3</td>
+                            <td>5º</td>
+                            <td>6</td>
+                        </tr>
+
+                        <tr>
+                            <td>13</td>
+                            <td>+5</td>
+                            <td>4</td>
+                            <td>12</td>
+                            <td>3</td>
+                            <td>5º</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>+5</td>
+                            <td>4</td>
+                            <td>12</td>
+                            <td>3</td>
+                            <td>5º</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>+5</td>
+                            <td>4</td>
+                            <td>13</td>
+                            <td>3</td>
+                            <td>5º</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>+5</td>
+                            <td>4</td>
+                            <td>13</td>
+                            <td>3</td>
+                            <td>5º</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td>+6</td>
+                            <td>4</td>
+                            <td>14</td>
+                            <td>4</td>
+                            <td>5º</td>
+                            <td>7</td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td>+6</td>
+                            <td>4</td>
+                            <td>14</td>
+                            <td>4</td>
+                            <td>5º</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>19</td>
+                            <td>+6</td>
+                            <td>4</td>
+                            <td>15</td>
+                            <td>4</td>
+                            <td>5º</td>
+                            <td>8</td>
+                        </tr>
+
+                        <tr>
+                            <td>20</td>
+                            <td>+6</td>
+                            <td>4</td>
+                            <td>15</td>
+                            <td>4</td>
+                            <td>5º</td>
+                            <td>8</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 class="section-title">Equipamento inicial</h3>
+            <ul>
+                <li>(a) Besta leve e 20 virotes ou (b) arma simples</li>
+                <li>(a) Bolsa de componentes ou (b) foco arcano</li>
+                <li>(a) Pacote do estudioso ou (b) pacote de masmorra</li>
+                <li>Corselete de couro, arma simples e duas adagas</li>
+            </ul>
+
+            <h3 class="section-title">Habilidades de Classe</h3>
+            <ul>
+                <li><strong>Dádiva de Pacto</strong>: escolha Pacto da Corrente, Pacto da Lâmina ou Pacto do Tomo (cada
+                    um com características distintas).</li>
+                <li><strong>Invocações Místicas</strong>: poderes permanentes (Armadura das Sombras, Máscara das Muitas
+                    Faces, Livro dos Segredos, etc.) que aumentam com o nível.</li>
+                <li><strong>Arcanum Místico</strong>: a níveis altos, pode escolher arcanos de 6º–9º nível para uso
+                    especial (uma vez por descanso longo).</li>
+
+                <li><strong>Subclasses (Patronos):</strong>
+                    <ul class="subclass">
+                        <li><strong>Feérico:</strong> Presença Feérica, Fuga Nebulosa, Defesa Sedutora, Delírio Obscuro;
+                            magias expandidas como fogo feérico, sono, etc.</li>
+                        <li><strong>Infernal:</strong> Benção do Obscuro, Sorte do Obscuro, Resistência Infernal,
+                            Passeio pelo Inferno; magias expandidas como comando, mãos flamejantes, bola de fogo, etc.
+                        </li>
+                        <li><strong>Grande Antigo:</strong> Mente Desperta, Proteção Entrópica, Escudo Mental, Criar
+                            Escravo; magias expandidas telepáticas e de controle.</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3 class="section-title">Invocações (exemplos)</h3>
+            <ul>
+                <li>Armadura das Sombras — conjura Armadura Arcana sem gastar espaço de magia.</li>
+                <li>Máscara das Muitas Faces — conjura Transformação Momentânea sem limite.</li>
+                <li>Livro dos Segredos Antigos — grava rituais no Livro das Sombras (requer Pacto do Tomo).</li>
+                <li>... e várias outras listadas no PDF.</li>
+            </ul>
+
+            <div class="subclass-buttons">
+                <button class="sub-btn" data-tab="arquifada">Arquifada</button>
+                <button class="sub-btn" data-tab="celestial">Celestial</button>
+                <button class="sub-btn" data-tab="grande-antigo">O Grande Antigo</button>
+                <button class="sub-btn" data-tab="infero">Infero</button>
+                <button class="sub-btn" data-tab="lamina-maldita">Lamina Maldita</button>
+                <button class="sub-btn" data-tab="genio">O Genio</button>
+                <button class="sub-btn" data-tab="insodavel">O Insondável</button>
+                <button class="sub-btn" data-tab="morto-vivo">Morto Vivo</button>
+                <button class="sub-btn" data-tab="eterno">O Eterno</button>
+            </div>
+
+            <div class="subclass-panel" data-content="arquifada">
+                <h4>Patrono - Arquifada</h4>
+                <ul class="subclass">
+                    <li><b>Nivel 3º</b> — :</li>
+                    <li><b>Nivel 6º</b> — :</li>
+                    <li><b>Nivel 10º</b> — :</li>
+                    <li><b>Nivel 14º</b> — :</li>
+                </ul>
+            </div>
+
+            <div class="subclass-panel" data-content="celestial">
+                <h4>Patrono - Celestial</h4>
+                <ul class="subclass">
+                    <li><b>Nivel 3º</b> — :</li>
+                    <li><b>Nivel 6º</b> — :</li>
+                    <li><b>Nivel 10º</b> — :</li>
+                    <li><b>Nivel 14º</b> — :</li>
+                </ul>
+
+            </div>
+
+            <div class="subclass-panel" data-content="grande-antigo">
+                <h4>Patrono - O Grande Antigo</h4>
+                <ul class="subclass">
+                    <li><b>Nivel 3º</b> — :</li>
+                    <li><b>Nivel 6º</b> — :</li>
+                    <li><b>Nivel 10º</b> — :</li>
+                    <li><b>Nivel 14º</b> — :</li>
+                </ul>
+            </div>
+
+            <div class="subclass-panel" data-content="infero">
+                <h4>Patrono - Infero</h4>
+                <ul class="subclass">
+                    <li><b>Nivel 3º</b> — :</li>
+                    <li><b>Nivel 6º</b> — :</li>
+                    <li><b>Nivel 10º</b> — :</li>
+                    <li><b>Nivel 14º</b> — :</li>
+                </ul>
+
+
+            </div>
+            <div class="subclass-panel" data-content="lamina-maldita">
+                <h4>Patrono - Lâmina Maldita</h4>
+                <ul class="subclass">
+                    <li><b>Nivel 3º</b> — :</li>
+                    <li><b>Nivel 6º</b> — :</li>
+                    <li><b>Nivel 10º</b> — :</li>
+                    <li><b>Nivel 14º</b> — :</li>
+                </ul>
+            </div>
+            <div class="subclass-panel" data-content="genio">
+                <h4>Patrono - O Gênio</h4>
+                <ul class="subclass">
+                    <li><b>Nivel 3º</b> — :</li>
+                    <li><b>Nivel 6º</b> — :</li>
+                    <li><b>Nivel 10º</b> — :</li>
+                    <li><b>Nivel 14º</b> — :</li>
+                </ul>
+
+            </div>
+            <div class="subclass-panel" data-content="insodavel">
+                <h4>Patrono - O Insondável</h4>
+                <ul class="subclass">
+                    <li><b>Nivel 3º</b> — :</li>
+                    <li><b>Nivel 6º</b> — :</li>
+                    <li><b>Nivel 10º</b> — :</li>
+                    <li><b>Nivel 14º</b> — :</li>
+                </ul>
+            </div>
+            <div class="subclass-panel" data-content="morto-vivo">
+                <h4>Patrono - Morto-Vivo</h4>
+                <ul class="subclass">
+                    <li><b>Nivel 3º</b> — :</li>
+                    <li><b>Nivel 6º</b> — :</li>
+                    <li><b>Nivel 10º</b> — :</li>
+                    <li><b>Nivel 14º</b> — :</li>
+                </ul>
+            </div>
+            <div class="subclass-panel" data-content="eterno">
+                <h4>Patrono - O Eterno</h4>
+                <ul class="subclass">
+                    <li><b>Nivel 3º</b> — :</li>
+                    <li><b>Nivel 6º</b> — :</li>
+                    <li><b>Nivel 10º</b> — :</li>
+                    <li><b>Nivel 14º</b> — :</li>
+                </ul>
+            </div>
+
+        </article>
+
+        <!-- ================= CLÉRIGO ================= -->
+        <span id="clerigo" class="anchor-target"></span>
+        <article class="clerigo">
+            <h2>CLÉRIGO</h2>
+            <p>Canalizador de poder divino com acesso a magias preparadas, domínios e Canalizar Divindade.</p>
+
+            <p class="meta">
+                <strong>Dado de Vida:</strong> d8<br>
+                <strong>PV:</strong> 8 + mod de Constituição no 1º; 1d8 (ou 5) + mod de Constituição posteriormente.<br>
+                <strong>Proficiências:</strong> Armaduras leves, médias e escudos; Armas simples; Testes: Sabedoria,
+                Carisma; Perícias: escolha 2 entre História, Intuição, Medicina, Persuasão, Religião.
+            </p>
+
+            <h3 class="section-title">Tabela de Progressão (resumo)</h3>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nível</th>
+                            <th>Bônus Prof.</th>
+                            <th>Truques</th>
+                            <th>Magias Preparadas</th>
+                            <th>Espaços por Nível</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>+2</td>
+                            <td>3</td>
+                            <td>2 + mod Sabedoria</td>
+                            <td>—</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>+2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>2 (1º)</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>+3</td>
+                            <td>4</td>
+                            <td>4</td>
+                            <td>2 (2º), etc.</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>+4</td>
+                            <td>4</td>
+                            <td>4</td>
+                            <td>vários espaços até 5º</td>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>+6</td>
+                            <td>5</td>
+                            <td>4 + mod Sabedoria</td>
+                            <td>espaços completos até 9º</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 class="section-title">Equipamento inicial</h3>
+            <ul>
+                <li>(a) Maça ou (b) machado de batalha (se proficiente)</li>
+                <li>(a) Armadura de escamas, (b) armadura de couro, ou (c) cota de malha (se proficiente)</li>
+                <li>(a) Besta leve e 20 virotes ou (b) arma simples</li>
+                <li>(a) Pacote de sacerdote ou (b) pacote do explorador; um escudo e um símbolo sagrado.</li>
+            </ul>
+
+            <h3 class="section-title">Domínios (exemplos)</h3>
+            <ul>
+                <li><strong>Conhecimento:</strong> bônus em perícias, Ler Pensamentos, Conjuração Potente, Visões do
+                    Passado.</li>
+                <li><strong>Enganação:</strong> Benção do Malandro, Invocar Duplicidade, Manto das Sombras, Ataque
+                    Divino.</li>
+                <li><strong>Guerra:</strong> proficiência em armaduras pesadas e armas marciais; Ataque Guiado e Avatar
+                    da Guerra.</li>
+                <li><strong>Luz, Natureza, Tempestade, Vida:</strong> cada um com magias e características específicas
+                    (veja tabelas no PDF para os magias de domínio por nível).</li>
+            </ul>
+
+            <h3 class="section-title">Canalizar Divindade</h3>
+            <p>Recurso usado para efeitos como Expulsar Mortos-Vivos e habilidades de domínio; número de usos escala com
+                níveis (ex.: 1–3 usos por descanso curto/long).</p>
+        </article>
+
+        <!-- ================= DRUIDA ================= -->
+        <span id="druida" class="anchor-target"></span>
+        <article class="druida">
+            <h2>DRUIDA</h2>
+            <p>Guardião da natureza com magias rituais, Forma Selvagem e conexão com o ciclo natural.</p>
+
+            <p class="meta">
+                <strong>Dado de Vida:</strong> d8<br>
+                <strong>Proficiências:</strong> Armaduras leves, médias (algumas restrições em armaduras metálicas
+                dependendo da tradição); Ferramentas: kit de herbalismo; Testes e perícias variam conforme seleção.
+            </p>
+
+            <h3 class="section-title">Equipamento inicial</h3>
+            <ul>
+                <li>(a) Escudo de madeira ou (b) qualquer arma simples</li>
+                <li>(a) Uma cimitarra ou (b) qualquer arma corpo a corpo simples</li>
+                <li>Corselete de couro, pacote do explorador e um foco druídico.</li>
+            </ul>
+
+            <h3 class="section-title">Habilidades de Classe</h3>
+            <ul>
+                <li><strong>Preparar e Conjurar Magias:</strong> prepara magias de druida igual a mod Sabedoria + nível.
+                </li>
+                <li><strong>Ritual:</strong> pode conjurar magias de druida como ritual se a magia tiver essa
+                    propriedade.</li>
+                <li><strong>Forma Selvagem:</strong> pode assumir forma de besta já vista; progressão de usos e CR
+                    permitidos escala com nível.</li>
+                <li><strong>Foco de Conjuração:</strong> foca druídico.</li>
+            </ul>
+        </article>
+
+        <!-- ================= GUERREIRO ================= -->
+        <span id="guerreiro" class="anchor-target"></span>
+        <article class="guerreiro">
+            <h2>GUERREIRO</h2>
+            <p>Especialista marcial com opções de estilos de luta, Ataque Extra e grande versatilidade tática.</p>
+
+            <p class="meta">
+                <strong>Dado de Vida:</strong> d10<br>
+                <strong>Proficiências:</strong> Todas as armaduras, escudos, armas marciais; Testes: Força,
+                Constituição; Perícias: escolha duas entre Atletismo, Intimidação, História, Percepção, Sobrevivência,
+                etc.
+            </p>
+
+            <h3 class="section-title">Habilidades de Classe (resumo)</h3>
+            <ul>
+                <li><strong>Ataque Extra:</strong> ganha ataques adicionais conforme progressão da classe.</li>
+                <li><strong>Surto de Ação:</strong> opções de ação adicional em alguns arquétipos (ex.: Guerreiro Ação
+                    Surge).</li>
+                <li><strong>Estilos de Luta e Manoeuvres:</strong> opções adicionais conforme subclasse (ex.: Campeão,
+                    Mestre de Batalha, Cavaleiro Arcano).</li>
+                <li><strong>Equipamento inicial:</strong> proficiências completas em armas/armaduras; escolha de armas,
+                    armadura e pacote conforme o PDF e o antecedente.</li>
+            </ul>
+        </article>
+
+        <!-- ================= LADINO ================= -->
+        <span id="ladino" class="anchor-target"></span>
+        <article class="ladino">
+            <h2>LADINO</h2>
+            <p>Perito em furtividade, ataques precisos (Ataque Furtivo) e habilidades utilitárias fora de combate.</p>
+
+            <p class="meta">
+                <strong>Dado de Vida:</strong> d8<br>
+                <strong>Proficiências:</strong> Armaduras leves; armas simples, bestas de mão, espadas curtas;
+                Ferramentas: kit de ladrão; Testes: Destreza, Inteligência; Perícias: escolha várias.
+            </p>
+
+            <h3 class="section-title">Tabela de Progressão & Ataque Furtivo</h3>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nível</th>
+                            <th>Ataque Furtivo</th>
+                            <th>Características importantes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>1d6</td>
+                            <td>Perícias extras, Sneak Attack</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>3d6</td>
+                            <td>Evasão, Característica de Arquétipo</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>5d6</td>
+                            <td>Característica do Arquétipo</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>6d6</td>
+                            <td>Talento Confiável</td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>8d6</td>
+                            <td>Mente Escorregadia</td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>9d6</td>
+                            <td>Característica de Arquétipo</td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td>10d6</td>
+                            <td>Sagacidade</td>
+                        </tr>
+                        <tr>
+                            <td>19</td>
+                            <td>—</td>
+                            <td>Golpe de Sorte</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 class="section-title">Subclasses (exemplos)</h3>
+            <h4>Assassino</h4>
+            <ul class="subclass">
+                <li>3º — proficiência com kit de disfarce e kit do envenenador; vantagem em ataques contra alvos que não
+                    tiveram seu turno; acertos contra surpresas são críticos.</li>
+                <li>9º — Especialista em Infiltração: cria identidades falsas (7 dias + 25 po).</li>
+            </ul>
+
+            <h4>Outros Arquétipos</h4>
+            <p>Thief, Arcane Trickster, etc. (características listadas no PDF).</p>
+        </article>
+
+        <!-- ================= ARTIFICER ================= -->
+        <!-- ================= ARTIFICER ================= -->
+        <!-- ================= ARTIFICER ================= -->
+        <p style="text-align:center; margin-top:24px; color:#666">Página gerada automaticamente a partir do seu HTML e
+            do PDF fornecido.</p>
+
+    </main>
+
+    <footer>
+        <p style="text-align:center; padding:18px 0; color:#8b6a8b">&copy; 2025 Almanaque de Aventuras</p>
+    </footer>
+    <script src="../JS/subclasses.js"></script>
+</body>
+
+</html>

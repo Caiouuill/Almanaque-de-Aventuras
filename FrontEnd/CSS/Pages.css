@@ -1,0 +1,358 @@
+/* ==========================================
+   PAGES.CSS - Estilos Específicos de Páginas
+   ========================================== */
+
+/* ==================== PÁGINA PRINCIPAL ==================== */
+main {
+  max-width: 1200px;
+  margin: var(--spacing-lg) auto;
+  padding: 0 var(--spacing-md) var(--spacing-xl);
+}
+
+.menus section {
+  margin-bottom: var(--spacing-xl);
+}
+
+.blue-title,
+.green-title,
+.purple-title {
+  color: var(--text-primary);
+  display: inline-block;
+  padding-bottom: var(--spacing-xs);
+  margin-bottom: var(--spacing-lg);
+  font-size: var(--font-size-2xl);
+  font-weight: 700;
+}
+
+.blue-title {
+  border-bottom: 3px solid #00aaff;
+}
+
+.green-title {
+  border-bottom: 3px solid #00ffaa;
+}
+
+.purple-title {
+  border-bottom: 3px solid #aa00ff;
+}
+
+/* ==================== ANTECEDENTES ==================== */
+.page-title {
+  text-align: center;
+  color: var(--accent);
+  margin: var(--spacing-md) 0 var(--spacing-lg);
+  font-size: var(--font-size-3xl);
+  letter-spacing: 1.5px;
+  font-weight: 700;
+}
+
+.topbar {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(8px);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+  box-shadow: var(--shadow-sm);
+  position: static;
+}
+
+.topbar nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+  justify-content: center;
+}
+
+.topbar nav a {
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: 20px;
+  border: 2px solid var(--accent);
+  background-color: var(--primary-light);
+  color: white;
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  transition: all var(--transition-base);
+}
+
+.topbar nav a:hover {
+  background-color: var(--accent);
+  border-color: var(--accent-light);
+  transform: translateY(-2px);
+}
+
+/* Card de antecedente */
+.antecedente {
+  background: white;
+  border: 2px solid var(--accent);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.antecedente h2 {
+  margin: 0 0 var(--spacing-md);
+  font-size: var(--font-size-xl);
+  text-align: center;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding-bottom: var(--spacing-sm);
+  border-bottom: 2px solid rgba(15, 52, 96, 0.15);
+}
+
+.antecedente p {
+  margin: var(--spacing-sm) 0;
+  line-height: 1.7;
+}
+
+.meta {
+  margin-top: var(--spacing-md);
+  font-size: var(--font-size-sm);
+  line-height: 1.8;
+}
+
+.meta strong {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.section-title {
+  margin-top: var(--spacing-lg);
+  margin-bottom: var(--spacing-sm);
+  color: var(--accent);
+  font-weight: 700;
+  font-size: var(--font-size-lg);
+}
+
+.two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-md);
+  margin: var(--spacing-md) 0;
+}
+
+/* Anchor targets para navegação */
+.anchor-target {
+  display: block;
+  position: relative;
+  top: -100px;
+  visibility: hidden;
+}
+
+/* ==================== CLASSES ==================== */
+/* Cards específicos de classes */
+article.barbaro,
+article.bardo,
+article.bruxo,
+article.clerigo,
+article.druida,
+article.guerreiro,
+article.ladino {
+  background: white;
+  padding: var(--spacing-lg);
+  margin: var(--spacing-lg) 0;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  border: 2px solid;
+}
+
+article.barbaro {
+  border-color: var(--color-barbaro);
+}
+
+article.barbaro h2,
+article.barbaro h3 {
+  color: var(--color-barbaro);
+}
+
+article.barbaro thead th {
+  background: linear-gradient(180deg, var(--color-barbaro-dark), var(--color-barbaro));
+}
+
+article.barbaro th.nivel {
+  color: var(--color-barbaro);
+}
+
+article.bardo {
+  border-color: var(--color-bardo);
+}
+
+article.bardo h2,
+article.bardo h3 {
+  color: var(--color-bardo);
+}
+
+article.bardo thead th {
+  background: linear-gradient(180deg, var(--color-bardo-dark), var(--color-bardo));
+}
+
+article.bardo th.nivel {
+  color: var(--color-bardo);
+}
+
+article.bruxo {
+  border-color: var(--color-bruxo);
+}
+
+article.bruxo h2,
+article.bruxo h3 {
+  color: var(--color-bruxo);
+}
+
+article.bruxo thead th {
+  background: linear-gradient(180deg, var(--color-bruxo-dark), var(--color-bruxo));
+}
+
+article.bruxo th.nivel {
+  color: var(--color-bruxo);
+}
+
+article.clerigo {
+  border-color: var(--color-clerigo);
+}
+
+article.clerigo h2,
+article.clerigo h3 {
+  color: var(--color-clerigo);
+}
+
+article.clerigo thead th {
+  background: linear-gradient(180deg, var(--color-clerigo-dark), var(--color-clerigo));
+}
+
+article.clerigo th.nivel {
+  color: var(--color-clerigo);
+}
+
+article.druida {
+  border-color: var(--color-druida);
+}
+
+article.druida h2,
+article.druida h3 {
+  color: var(--color-druida);
+}
+
+article.druida thead th {
+  background: linear-gradient(180deg, var(--color-druida-dark), var(--color-druida));
+}
+
+article.druida th.nivel {
+  color: var(--color-druida);
+}
+
+article.guerreiro {
+  border-color: var(--color-guerreiro);
+}
+
+article.guerreiro h2,
+article.guerreiro h3 {
+  color: var(--color-guerreiro);
+}
+
+article.guerreiro thead th {
+  background: linear-gradient(180deg, var(--color-guerreiro-dark), var(--color-guerreiro));
+}
+
+article.guerreiro th.nivel {
+  color: var(--color-guerreiro);
+}
+
+article.ladino {
+  border-color: var(--color-ladino);
+}
+
+article.ladino h2,
+article.ladino h3 {
+  color: var(--color-ladino);
+}
+
+article.ladino thead th {
+  background: linear-gradient(180deg, var(--color-ladino-dark), var(--color-ladino));
+}
+
+article.ladino th.nivel {
+  color: var(--color-ladino);
+}
+
+/* Resumo de níveis */
+.resumoNivel {
+  margin-top: var(--spacing-md);
+  color: var(--accent);
+  font-size: var(--font-size-lg);
+}
+
+.resumoNivel + ul {
+  margin-left: var(--spacing-lg);
+  margin-bottom: var(--spacing-md);
+}
+
+.resumoNivel + ul li {
+  list-style: disc;
+  margin: var(--spacing-xs) 0;
+  line-height: 1.6;
+}
+
+/* Subclasses */
+.subclass {
+  margin-left: var(--spacing-lg);
+  margin-top: var(--spacing-sm);
+}
+
+.subclass li {
+  list-style: disc;
+  margin: var(--spacing-sm) 0;
+  line-height: 1.6;
+}
+
+.SubBarbaro {
+  border: 2px solid var(--color-barbaro);
+  background: white;
+  padding: var(--spacing-md);
+  margin: var(--spacing-md) 0;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  font-weight: 700;
+  color: var(--color-barbaro);
+}
+
+/* ==================== MAGIAS ==================== */
+#spells-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--spacing-lg);
+  margin: var(--spacing-lg) 0;
+}
+
+#spells-container .card h3 {
+  margin-top: 0;
+  margin-bottom: var(--spacing-sm);
+  color: var(--accent);
+  font-size: var(--font-size-lg);
+}
+
+#spells-container .card p {
+  margin: var(--spacing-xs) 0;
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+}
+
+/* ==================== RESPONSIVIDADE ==================== */
+@media (max-width: 768px) {
+  .two-column {
+    grid-template-columns: 1fr;
+  }
+  
+  .topbar nav {
+    flex-direction: column;
+  }
+  
+  #spells-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .page-title {
+    font-size: var(--font-size-xl);
+  }
+}

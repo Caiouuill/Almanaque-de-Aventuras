@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Magias</title>
+  <link rel="stylesheet" href="../CSS/magic.css" />
+</head>
+
+<body>
+
+  <header>
+    <nav class="top-nav">
+      <div class="nav-left">
+        <img src="../Icons/Icone Dado x32.png" alt="Logo" class="logo">
+        <a class="site-name" a href="index.html">Almanaque de Aventuras</a>
+      </div>
+
+      <ul class="nav-center">
+        <li class="dropdown">
+          Jogadores
+          <ul class="dropdown-menu">
+            <li><a href="racas.html">Raças</a></li>
+            <li><a href="classes.html">Classes</a></li>
+            <li><a href="talentos.html">Talentos</a></li>
+            <li><a href="antecedentes.html">Antecedentes</a></li>
+            <li><a href="items.html">Itens</a></li>
+            <li><a href="magic.html">Magias</a></li>
+            <li><a href="GdS.html">Gerador de Status</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          Regras
+          <ul class="dropdown-menu">
+            <li><a href="#">Aventuras</a></li>
+            <li><a href="#">Livros</a></li>
+            <li><a href="#">Rules Glossary</a></li>
+            <li><a href="#">Condições</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          Mestre
+          <ul class="dropdown-menu">
+            <li><a href="#">Bestiário</a></li>
+            <li><a href="#">Gerador de Loot</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="nav-right">
+        🔍
+      </div>
+    </nav>
+  </header>
+  <main>
+
+
+    <h1>Lista de Magias</h1>
+    <div id="filterToggle" class="filter-button">Filtros ▼</div>
+
+    <div id="filterPanel" class="filter-panel closed">
+
+      <div class="filter-item">
+        <label for="nomeFilter">Nome:</label>
+        <input type="text" id="nomeFilter" placeholder="Digite o nome da magia">
+      </div>
+      <div class="filter-item">
+        <label for="nivelFilter">Nível:</label>
+        <select id="nivelFilter">
+          <option value="">Todos</option>
+          <option value="Cantrip">Cantrip</option>
+          <option value="1º">1º</option>
+          <option value="2º">2º</option>
+          <option value="3º">3º</option>
+          <option value="4º">4º</option>
+          <option value="5º">5º</option>
+          <option value="6º">6º</option>
+          <option value="7º">7º</option>
+          <option value="8º">8º</option>
+          <option value="9º">9º</option>
+        </select>
+      </div>
+      <div class="filter-item">
+        <label for="classeFilter">Classe:</label>
+        <select id="classeFilter">
+          <option value="">Todos</option>
+          <option value="Artífice">Artífice</option>
+          <option value="Bardo">Bardo</option>
+          <option value="Clérigo">Clérigo</option>
+          <option value="Druida">Druida</option>
+          <option value="Guerreiro">Guerreiro</option>
+          <option value="Patrulheiro">Patrulheiro</option>
+          <option value="Ladino">Ladino</option>
+          <option value="Feiticeiro">Feiticeiro</option>
+          <option value="Mago">Mago</option>
+          <option value="Paladino">Paladino</option>
+          <option value="Bruxo">Bruxo</option>
+        </select>
+      </div>
+      <div class="filter-item">
+        <!-- Coloque aqui seus filtros -->
+        <label for="alcanceFilter">Alcance:</label>
+        <select id="alcanceFilter">
+          <option value="">Todos</option>
+          <option value="Pessoal">Pessoal</option>
+          <option value="Toque">Toque</option>
+          <option value="Metros">Metros</option>
+          <option value="Km">Km</option>
+        </select>
+      </div>
+      <div class="filter-item">
+        <label for="tipoMagiaFilter">Tipo da Magia:</label>
+        <select id="tipoMagiaFilter">
+          <option value="">Todos</option>
+          <option value="Dano">Dano</option>
+          <option value="Cura">Cura</option>
+          <option value="Defesa">Defesa</option>
+          <option value="Buff">Buff</option>
+          <option value="Debuff">Debuff</option>
+          <option value="Utilidade">Utilidade</option>
+          <option value="Outro">Outro</option>
+        </select>
+      </div>
+      <div class="filter-item">
+        <label for="ritualFilter">Ritual:</label>
+        <select id="ritualFilter">
+          <option value="">Todos</option>
+          <option value="true">Sim</option>
+          <option value="false">Não</option>
+        </select>
+      </div>
+      <div class="filter-item">
+        <label for="tempoFilter">Tempo de Conjuração:</label>
+        <select id="tempoFilter">
+          <option value="">Todos</option>
+          <option value="Ação">Ação</option>
+          <option value="Ação Bônus">Ação Bônus</option>
+          <option value="Reação">Reação</option>
+          <option value="Especial">Especial</option>
+          <option value="Minutos">Minutos</option>
+          <option value="Horas">Horas</option>
+        </select>
+      </div>
+      <div class="filter-item">
+        <label for="escolaFilter">Escola:</label>
+        <select id="escolaFilter">
+          <option value="">Todas</option>
+          <option value="Abjuração">Abjuração</option>
+          <option value="Adivinhação">Adivinhação</option>
+          <option value="Conjuração">Conjuração</option>
+          <option value="Encantamento">Encantamento</option>
+          <option value="Evocação">Evocação</option>
+          <option value="Ilusão">Ilusão</option>
+          <option value="Necromancia">Necromancia</option>
+          <option value="Transmutação">Transmutação</option>
+        </select>
+      </div>
+
+
+
+      <section class="filtrobaixo">
+        <div class="filter-item">
+          <label for="componenteFilter">Componente:</label>
+          <select id="componenteFilter">
+            <option value="">Todos</option>
+            <option value="V">V</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="I">I</option>
+          </select>
+        </div>
+        <div class="filter-item">
+          <label for="bookFilter">Livro:</label>
+          <select id="bookFilter">
+            <option value="">Todos</option>
+            <option value="PHB">Player’s Handbook</option>
+            <option value="XGE">Xanathar’s Guide to Everything</option>
+            <option value="TCE">Tasha’s Cauldron of Everything</option>
+            <option value="EEPC">Elemental Evil Player’s Companion</option>
+            <option value="SCAG">Sword Coast Adventurer’s Guide</option>
+            <option value="AI">Acquisitions Incorporated</option>
+            <option value="EGtW">Explorer’s Guide to Wildemount</option>
+            <option value="GGR">Guildmaster’s Guide to Ravnica</option>
+            <option value="LLK">Lost Laboratory of Kwalish</option>
+          </select>
+        </div>
+      </section>
+
+
+
+    </div>
+
+
+    <div id="spells-container"></div>
+
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Almanaque de Aventuras. Todos os direitos reservados.</p>
+    <p>Desenvolvido por Seu Nome</p>
+  </footer>
+  <script src="../JS/magic.js"></script>
+</body>
+
+</html>
